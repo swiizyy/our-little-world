@@ -1,0 +1,13 @@
+name = "Our Little World"
+author = "Our Little World contributors"
+version = "0.1.0-alpha.1"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "2f123c9bff75d15e2dbe231008a53a40d447f77fa75cbc3dbe3547fff2d61721"
+
+[versions]
+fabric = "0.20.1"
+minecraft = "26.3"

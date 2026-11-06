@@ -1,0 +1,28 @@
+name: Validate pack
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-go@v5
+        with:
+          go-version: stable
+      - name: Install Packwiz
+        run: go install github.com/packwiz/packwiz@latest
+      - name: Validate Packwiz metadata
+        run: |
+          "$(go env GOPATH)/bin/packwiz" refresh
+          git diff --exit-code -- pack.toml index.toml
+      - name: Test Fabulously Optimized synchronization
+        run: python3 -m unittest discover -s tests -v

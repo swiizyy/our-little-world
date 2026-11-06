@@ -1,0 +1,244 @@
+name: Release modpack
+
+on:
+  push:
+    branches:
+      - stable
+      - beta
+      - alpha
+    tags:
+      - "v*"
+  workflow_dispatch:
+    inputs:
+      channel:
+        description: Release channel
+        type: choice
+        required: true
+        default: beta
+        options:
+          - stable
+          - beta
+          - alpha
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-go@v5
+        with:
+          go-version: stable
+      - name: Install Packwiz
+        run: go install github.com/packwiz/packwiz@latest
+      - name: Set pack version and release channel
+        env:
+          REF_NAME: ${{ github.ref_name }}
+          REF_TYPE: ${{ github.ref_type }}
+          EVENT_NAME: ${{ github.event_name }}
+          INPUT_CHANNEL: ${{ inputs.channel }}
+          RUN_NUMBER: ${{ github.run_number }}
+          RUN_ATTEMPT: ${{ github.run_attempt }}
+        run: |
+          python3 - <<'PY'
+          import os
+          import re
+          import tomllib
+          from pathlib import Path
+
+          ref_name = os.environ["REF_NAME"]
+          ref_type = os.environ["REF_TYPE"]
+          event_name = os.environ["EVENT_NAME"]
+          with open("pack.toml", "rb") as pack_file:
+              pack = tomllib.load(pack_file)
+
+          if event_name == "workflow_dispatch":
+              channel_name = os.environ["INPUT_CHANNEL"]
+              if channel_name not in {"stable", "beta", "alpha"}:
+                  raise SystemExit(f"Unsupported release channel: {channel_name}")
+              base_version = pack["version"].split("+", 1)[0].split("-", 1)[0]
+              if channel_name == "stable":
+                  pack_version = (
+                      f'{base_version}+stable.'
+                      f'{os.environ["RUN_NUMBER"]}.{os.environ["RUN_ATTEMPT"]}'
+                  )
+                  channel = "release"
+              else:
+                  pack_version = (
+                      f'{base_version}-{channel_name}.'
+                      f'{os.environ["RUN_NUMBER"]}.{os.environ["RUN_ATTEMPT"]}'
+                  )
+                  channel = channel_name
+              release_tag = f"v{pack_version}"
+          elif ref_type == "tag":
+              match = re.fullmatch(
+                  r"v(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)"
+                  r"(?:-([0-9A-Za-z-]+(?:\.[0-9A-Za-z-]+)*))?"
+                  r"(?:\+[0-9A-Za-z-]+(?:\.[0-9A-Za-z-]+)*)?",
+                  ref_name,
+              )
+              if not match:
+                  raise SystemExit(f"Tag {ref_name!r} is not a valid v-prefixed semantic version")
+              pack_version = ref_name[1:]
+              prerelease = match.group(4) or ""
+              if prerelease.startswith("alpha"):
+                  channel = "alpha"
+              elif prerelease:
+                  channel = "beta"
+              else:
+                  channel = "release"
+              release_tag = ref_name
+          elif ref_type == "branch" and ref_name in {"stable", "beta", "alpha"}:
+              base_version = pack["version"].split("+", 1)[0].split("-", 1)[0]
+              if ref_name == "stable":
+                  pack_version = (
+                      f'{base_version}+stable.'
+                      f'{os.environ["RUN_NUMBER"]}.{os.environ["RUN_ATTEMPT"]}'
+                  )
+                  channel = "release"
+              else:
+                  pack_version = (
+                      f'{base_version}-{ref_name}.'
+                      f'{os.environ["RUN_NUMBER"]}.{os.environ["RUN_ATTEMPT"]}'
+                  )
+                  channel = ref_name
+              release_tag = ""
+          else:
+              raise SystemExit(f"Unsupported release ref: {ref_type}/{ref_name}")
+
+          pack_path = Path("pack.toml")
+          text, replacements = re.subn(
+              r'^version = "[^"]*"$',
+              f'version = "{pack_version}"',
+              pack_path.read_text(),
+              count=1,
+              flags=re.MULTILINE,
+          )
+          if replacements != 1:
+              raise SystemExit("Expected exactly one version entry in pack.toml")
+          pack_path.write_text(text)
+
+          env_file = Path(os.environ["GITHUB_ENV"])
+          with env_file.open("a") as output:
+              output.write(f"PACK_VERSION={pack_version}\n")
+              output.write(f"VERSION_CHANNEL={channel}\n")
+              output.write(f"ASSET_VERSION={pack_version.replace('+', '-')}\n")
+              output.write(f"RELEASE_TAG={release_tag}\n")
+          PY
+      - name: Refresh and export modpacks
+        run: |
+          "$(go env GOPATH)/bin/packwiz" refresh
+          "$(go env GOPATH)/bin/packwiz" modrinth export \
+            --output "our-little-world-${ASSET_VERSION}.mrpack"
+          "$(go env GOPATH)/bin/packwiz" curseforge export \
+            --output "our-little-world-${ASSET_VERSION}-curseforge.zip"
+      - name: Upload branch build
+        if: github.event_name == 'push' && github.ref_type == 'branch'
+        uses: actions/upload-artifact@v4
+        with:
+          name: our-little-world-${{ env.ASSET_VERSION }}
+          path: |
+            our-little-world-${{ env.ASSET_VERSION }}.mrpack
+            our-little-world-${{ env.ASSET_VERSION }}-curseforge.zip
+          if-no-files-found: error
+      - name: Create GitHub Release
+        if: github.ref_type == 'tag' || github.event_name == 'workflow_dispatch'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          ASSETS=(
+            "our-little-world-${ASSET_VERSION}.mrpack"
+            "our-little-world-${ASSET_VERSION}-curseforge.zip"
+          )
+          if gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
+            gh release upload "$RELEASE_TAG" "${ASSETS[@]}" --clobber
+          else
+            RELEASE_FLAGS=()
+            if [[ "$VERSION_CHANNEL" != "release" ]]; then
+              RELEASE_FLAGS+=(--prerelease)
+            fi
+            gh release create "$RELEASE_TAG" "${ASSETS[@]}" \
+              --title "Our Little World ${PACK_VERSION}" \
+              --generate-notes \
+              "${RELEASE_FLAGS[@]}"
+          fi
+      - name: Publish version to Modrinth when configured
+        env:
+          MODRINTH_TOKEN: ${{ secrets.MODRINTH_TOKEN }}
+          MODRINTH_PROJECT_ID: ${{ vars.MODRINTH_PROJECT_ID }}
+        run: |
+          if [[ -z "$MODRINTH_TOKEN" || -z "$MODRINTH_PROJECT_ID" ]]; then
+            echo "::notice::Set MODRINTH_TOKEN and MODRINTH_PROJECT_ID to publish on Modrinth."
+            exit 0
+          fi
+
+          python3 - <<'PY'
+          import json
+          import os
+          import tomllib
+          from pathlib import Path
+
+          with open("pack.toml", "rb") as pack_file:
+              pack = tomllib.load(pack_file)
+
+          Path("modrinth-version.json").write_text(json.dumps({
+              "name": f'{pack["name"]} {os.environ["PACK_VERSION"]}',
+              "version_number": os.environ["PACK_VERSION"],
+              "changelog": f'Release {os.environ["PACK_VERSION"]}',
+              "game_versions": [pack["versions"]["minecraft"]],
+              "version_type": os.environ["VERSION_CHANNEL"],
+              "loaders": ["fabric"],
+              "featured": False,
+              "project_id": os.environ["MODRINTH_PROJECT_ID"],
+              "file_parts": ["pack"],
+              "primary_file": "pack",
+          }))
+          PY
+          curl --fail-with-body --silent --show-error \
+            --request POST "https://api.modrinth.com/v2/version" \
+            --header "Authorization: ${MODRINTH_TOKEN}" \
+            --header "User-Agent: swiizyy/our-little-world GitHubActions" \
+            --form "data=@modrinth-version.json;type=application/json" \
+            --form "pack=@our-little-world-${ASSET_VERSION}.mrpack"
+      - name: Publish version to CurseForge when configured
+        env:
+          CURSEFORGE_API_TOKEN: ${{ secrets.CURSEFORGE_API_TOKEN }}
+          CURSEFORGE_PROJECT_ID: ${{ vars.CURSEFORGE_PROJECT_ID }}
+        run: |
+          if [[ -z "$CURSEFORGE_API_TOKEN" || -z "$CURSEFORGE_PROJECT_ID" ]]; then
+            echo "::notice::Set CURSEFORGE_API_TOKEN and CURSEFORGE_PROJECT_ID to publish on CurseForge."
+            exit 0
+          fi
+
+          python3 - <<'PY'
+          import json
+          import os
+          import tomllib
+          from pathlib import Path
+
+          with open("pack.toml", "rb") as pack_file:
+              pack = tomllib.load(pack_file)
+
+          Path("curseforge-metadata.json").write_text(json.dumps({
+              "changelog": f'Release {os.environ["PACK_VERSION"]}',
+              "changelogType": "text",
+              "displayName": f'{pack["name"]} {os.environ["PACK_VERSION"]}',
+              "gameVersionNames": [
+                  pack["versions"]["minecraft"],
+                  "Fabric",
+                  "Client",
+              ],
+              "releaseType": os.environ["VERSION_CHANNEL"],
+          }))
+          PY
+          curl --fail-with-body --silent --show-error \
+            --request POST \
+            "https://minecraft.curseforge.com/api/projects/${CURSEFORGE_PROJECT_ID}/upload-file" \
+            --header "X-Api-Token: ${CURSEFORGE_API_TOKEN}" \
+            --form "metadata=<curseforge-metadata.json" \
+            --form "file=@our-little-world-${ASSET_VERSION}-curseforge.zip"

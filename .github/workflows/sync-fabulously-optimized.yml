@@ -1,0 +1,55 @@
+name: Sync Fabulously Optimized
+
+on:
+  schedule:
+    - cron: "23 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: sync-fabulously-optimized
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-go@v5
+        with:
+          go-version: stable
+      - name: Install Packwiz
+        run: go install github.com/packwiz/packwiz@latest
+      - name: Synchronize upstream mods
+        run: |
+          PATH="$(go env GOPATH)/bin:$PATH" python3 scripts/sync_fabulously_optimized.py
+      - name: Validate synchronized metadata and tests
+        run: |
+          python3 -m unittest discover -s tests -v
+          BEFORE="$(sha256sum pack.toml index.toml)"
+          "$(go env GOPATH)/bin/packwiz" refresh
+          test "$BEFORE" = "$(sha256sum pack.toml index.toml)"
+      - name: Open or update pull request
+        uses: peter-evans/create-pull-request@v8
+        with:
+          branch: automation/sync-fabulously-optimized
+          add-paths: |
+            mods/
+            pack.toml
+            index.toml
+          commit-message: "chore: sync Fabulously Optimized mods"
+          title: "chore: sync Fabulously Optimized mods"
+          body: |
+            Synchronizes mod versions with the latest Fabulously Optimized release
+            compatible with the pack's Minecraft and Fabric loader versions.
+
+            Mods removed upstream and locally added mods are retained. Review the
+            changes and redistribution permissions before releasing.
