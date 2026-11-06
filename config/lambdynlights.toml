@@ -1,0 +1,6 @@
+mode = "fancy"
+
+[light_sources]
+entities = true
+self = true
+firefly = true

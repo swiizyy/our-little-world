@@ -1,0 +1,6 @@
+{
+  "quality": {
+    "improvedFluidShaping": true,
+    "pixelFilteringMode": "NEAREST"
+  }
+}

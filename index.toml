@@ -1,6 +1,14 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/lambdynlights.toml"
+hash = "cd47e5cf593236109b8d49eb4ddd9095bb3409703dfa707201132af03eedcc8d"
+
+[[files]]
+file = "config/sodium-options.json"
+hash = "110fe9d2295c52549c7282ec386a3c161fe427411c620b8aa810700f7493d8ae"
+
+[[files]]
 file = "mods/animaticarefabricated.pw.toml"
 hash = "34920a5d4393d732df6be123cb263815cc2684c3ec8866480927413879768c54"
 metafile = true

@@ -32,6 +32,13 @@ Our Little World — Cozy Edition 1.0.0 modpack. Existing optimization mod versi
 and Fabric 0.20.1 were retained where they differed from that archive. Its
 resource packs, shaders, and configuration overrides were not imported.
 
+The current pack includes a small set of client-side visual overrides in
+`config/`: Sodium uses alternative fluid shaping for more consistent-looking
+water around waterlogged builds while keeping crisp pixel textures, and
+LambDynamicLights keeps fancy lighting and illuminated entities/fireflies.
+These settings do not change survival balance or world generation. BetterGrassify
+already defaults to fancy grass and Lambda-style snow, so it needs no override.
+
 ## Syncing optimization mods
 
 To sync with the latest Fabulously Optimized release using the exact Minecraft
