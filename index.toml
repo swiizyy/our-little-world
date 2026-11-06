@@ -9,6 +9,14 @@ file = "config/sodium-options.json"
 hash = "110fe9d2295c52549c7282ec386a3c161fe427411c620b8aa810700f7493d8ae"
 
 [[files]]
+file = "defaultconfigs/xaero/minimap/profiles/default.cfg"
+hash = "72d4cd84b56bd1a6fa0646d0a8b2efc14836f3bfa87384fd87eeb0edd79f3458"
+
+[[files]]
+file = "defaultconfigs/xaero/world-map/profiles/default.cfg"
+hash = "ac81fe9074b7bc421f581062ba51c380ad9f065574932931f9a71e0f7d2ec481"
+
+[[files]]
 file = "mods/animaticarefabricated.pw.toml"
 hash = "34920a5d4393d732df6be123cb263815cc2684c3ec8866480927413879768c54"
 metafile = true

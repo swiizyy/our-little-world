@@ -39,6 +39,16 @@ LambDynamicLights keeps fancy lighting and illuminated entities/fireflies.
 These settings do not change survival balance or world generation. BetterGrassify
 already defaults to fancy grass and Lambda-style snow, so it needs no override.
 
+Xaero's Minimap and World Map starter profiles are in `defaultconfigs/xaero/`.
+They keep Waystones visible, soften minimap waypoint markers, and enable blended
+biome colors and the hovered-biome label on the world map. Xaero copies these
+profiles into its config directory on first launch; existing local profiles are
+left untouched.
+
+The minimap profile also displays tracked players on both maps. Xaero can only
+show positions shared by the server or a supported party/tracking integration;
+these client settings do not enable server-side tracking.
+
 ## Syncing optimization mods
 
 To sync with the latest Fabulously Optimized release using the exact Minecraft
