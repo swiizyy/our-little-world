@@ -44,9 +44,16 @@ The current pack includes a small set of client-side visual overrides in
 water around waterlogged builds while keeping crisp pixel textures, and
 LambDynamicLights keeps fancy lighting and illuminated entities/fireflies. Jade
 uses its dark tooltip theme with slightly softened opacity, and Zoomify uses
-smooth, short zoom transitions.
+smooth, short zoom transitions. InventoryHUD+ uses a compact inventory display
+with a softened background that disappears when the inventory is empty. JEI's
+ingredient and bookmark lists are limited to six columns, leaving more room
+around the inventory.
 These settings do not change survival balance or world generation. BetterGrassify
 already defaults to fancy grass and Lambda-style snow, so it needs no override.
+
+JEI's pack defaults live in `config/jei/client/default/jei-client.ini` and can
+be overridden by the player's own JEI client settings. InventoryHUD+ reads
+`config/inventoryhud.json` directly; its options can be adjusted in game.
 
 Xaero's Minimap and World Map starter profiles are in `defaultconfigs/xaero/`.
 They keep Waystones visible, soften minimap waypoint markers, and enable blended

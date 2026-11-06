@@ -1,8 +1,16 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/inventoryhud.json"
+hash = "dee97346a2d97cc57bd21a73fe0083dc3744596c0962d1ba69a115640af46b7d"
+
+[[files]]
 file = "config/jade/jade.json"
 hash = "9e372bedaada1b28274da8215cdf57081634b0cfefc34299bb6233546506863c"
+
+[[files]]
+file = "config/jei/client/default/jei-client.ini"
+hash = "29e7125b70ca88c22d779418f58b9acde705d6dbcd3120b7534ded17b3d87625"
 
 [[files]]
 file = "config/lambdynlights.toml"
