@@ -327,6 +327,16 @@ hash = "54d699d9ba85bb08b9fd3696a11c7449ea1175a118805855143e1c88fa54aa6b"
 metafile = true
 
 [[files]]
+file = "mods/storagedrawers.pw.toml"
+hash = "171ce7e8cc506a0a8ed219dbd265db8ddd68c27e572a637fc7a52f4c2c58467f"
+metafile = true
+
+[[files]]
+file = "mods/travelersbackpack.pw.toml"
+hash = "61cfca871c71a3e94fef5823538cf5eadc831809cb59288812bf9f298bb1fe4b"
+metafile = true
+
+[[files]]
 file = "mods/unified-xaero-worldmap.pw.toml"
 hash = "1ea70c18686db45caf07ece0120f4a39ce05f2393dedd38158a3058ccc134671"
 metafile = true

@@ -18,10 +18,13 @@ where the adventure takes you.
 - 🏡 **Build a home:** furnish a cottage and connect your favorite places with
   bridges, doors, windows, and decorations from Macaw's mods.
 - 🥕 **Grow and cook:** turn your harvest into meals with Farmer's Delight.
+- 🎒 **Bring your essentials:** carry extra supplies with Traveler's Backpack
+  and keep bulk storage tidy with Storage Drawers.
 - 🌿 **Explore together:** share explored areas on Xaero's World Map, encounter
   wildlife with Naturalist, and revisit favorite places with Waystones.
 - 🌷 **Enjoy the atmosphere:** improve lighting, animations, and visuals with
-  mods including Iris, LambDynamicLights, and Entity Model Features.
+  mods including Iris, LambDynamicLights, Entity Model Features, and the
+  Simply Cozy - Halloween Update.
 - ⚡ **Keep things smooth:** performance mods such as Sodium, Lithium, and
   FerriteCore help make room for more adventures.
 

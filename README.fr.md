@@ -18,10 +18,13 @@ rencontrez la faune et partez explorer à votre rythme.
   préférés avec les ponts, portes, fenêtres et décorations des mods Macaw's.
 - 🥕 **Cultivez et cuisinez :** transformez vos récoltes en repas avec Farmer's
   Delight.
+- 🎒 **Emportez vos affaires :** transportez plus d'objets avec Traveler's
+  Backpack et organisez vos réserves avec Storage Drawers.
 - 🌿 **Explorez ensemble :** découvrez la faune avec Naturalist, repérez-vous
   grâce aux cartes et retrouvez vos lieux préférés avec Waystones.
 - 🌷 **Profitez de l'ambiance :** améliorez l'éclairage, les animations et les
-  graphismes grâce notamment à Iris, LambDynamicLights et Entity Model Features.
+  graphismes grâce notamment à Iris, LambDynamicLights, Entity Model Features
+  et Simply Cozy - Halloween Update.
 - ⚡ **Jouez plus confortablement :** Sodium, Lithium et FerriteCore contribuent
   à améliorer les performances.
 

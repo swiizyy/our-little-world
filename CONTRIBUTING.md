@@ -32,6 +32,10 @@ Our Little World — Cozy Edition 1.0.0 modpack. Existing optimization mod versi
 and Fabric 0.20.1 were retained where they differed from that archive. Its
 resource packs, shaders, and configuration overrides were not imported.
 
+Traveler's Backpack and Storage Drawers are additional gameplay mods selected
+for Minecraft 26.3; they are not managed by the Fabulously Optimized sync
+script. Simply Cozy - Halloween Update is also included in the pack.
+
 The current pack includes a small set of client-side visual overrides in
 `config/`: Sodium uses alternative fluid shaping for more consistent-looking
 water around waterlogged builds while keeping crisp pixel textures, and
