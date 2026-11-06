@@ -41,9 +41,25 @@ rencontrez la faune et partez explorer à votre rythme.
    [Prism Launcher](https://prismlauncher.org/).
 3. Lancez l'instance, créez un monde ou rejoignez-en un, puis partez explorer.
 
+Faithful 64x et ses extensions Ore Borders, Clear Glass et Visual Waxed Copper
+Items sont inclus mais ne sont pas activés automatiquement. Dans **Options →
+Packs de ressources**, sélectionnez ceux qui vous plaisent et placez les
+extensions au-dessus de Faithful.
+
 Pour jouer ensemble, utilisez la même version du modpack. Le pack inclut e4mc
 et Simple Voice Chat ; consultez leurs instructions de configuration pour
 l'hébergement et le chat vocal.
+
+## Crédits
+
+Le pack inclut [Faithful 64x](https://faithfulpack.net/), créé par l'équipe
+Faithful, et [Ore Borders 64x](https://faithfulpack.net/addons/ore-borders-64x),
+créé par Hedreon et AyaanThe0ne. Voir la
+[licence Faithful](https://faithfulpack.net/license) et la
+[licence de l'extension](LICENSE-Ore-Borders.txt).
+Clear Glass est créé par [lulyanh](https://modrinth.com/resourcepack/faithful-64x-clear-glass),
+et Visual Waxed Copper Items par
+[TQNL](https://github.com/TQNL/TQNL-Faithful-Add-ons).
 
 ---
 

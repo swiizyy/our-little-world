@@ -39,6 +39,14 @@ script. Simply Cozy - Halloween Update is also included in the pack.
 InventoryHUD+ and JEI provide client-side inventory and recipe information.
 JEI's required MezzConfig library is included automatically by Packwiz.
 
+Faithful 64x is a client-side resource pack distributed through Modrinth. Its
+Ore Borders 64x add-on is downloaded from the author's GitHub release. Players
+can also use Clear Glass for less obstructed glass and Visual Waxed Copper
+Items to identify waxed copper in their inventories. They enable the packs
+manually in Minecraft's resource pack menu, with add-ons above Faithful,
+preserving their existing options. See `CREDITS.txt` for attribution and
+license information.
+
 The current pack includes a small set of client-side visual overrides in
 `config/`: Sodium uses alternative fluid shaping for more consistent-looking
 water around waterlogged builds while keeping crisp pixel textures, and

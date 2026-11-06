@@ -1,0 +1,13 @@
+name = "Faithful 64x - Clear Glass"
+filename = "Faithful 64x - Clear Glass 2.2.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/aLoBGKUU/versions/o9MBFFQ8/Faithful%2064x%20-%20Clear%20Glass%202.2.zip"
+hash-format = "sha512"
+hash = "a0b646c40afc9afc7f05dd5414dfe51e12f8c73e2121b226a871dbc939ccece013c3415c582cc44185bd71488ed6a3b2d3df89eaaecef9ced36afcad3bfee185"
+
+[update]
+[update.modrinth]
+mod-id = "aLoBGKUU"
+version = "o9MBFFQ8"

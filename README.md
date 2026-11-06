@@ -39,9 +39,23 @@ where the adventure takes you.
    [Prism Launcher](https://prismlauncher.org/).
 3. Launch the new instance, create or join a world, and start exploring.
 
+Faithful 64x and its Ore Borders, Clear Glass, and Visual Waxed Copper Items
+add-ons are included but not enabled automatically. In **Options → Resource
+Packs**, select the ones you like and place the add-ons above Faithful.
+
 For multiplayer, both players should use the same pack version. The pack
 includes e4mc and Simple Voice Chat; consult their setup instructions for
 hosting and voice chat.
+
+## Credits
+
+The pack includes [Faithful 64x](https://faithfulpack.net/) by the Faithful
+team and [Ore Borders 64x](https://faithfulpack.net/addons/ore-borders-64x) by
+Hedreon and AyaanThe0ne. See the [Faithful license](https://faithfulpack.net/license)
+and the [add-on license](LICENSE-Ore-Borders.txt).
+Clear Glass is by [lulyanh](https://modrinth.com/resourcepack/faithful-64x-clear-glass),
+and Visual Waxed Copper Items is by
+[TQNL](https://github.com/TQNL/TQNL-Faithful-Add-ons).
 
 ---
 

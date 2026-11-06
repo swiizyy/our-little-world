@@ -14,6 +14,17 @@ Whether you're building your dream cottage, discovering breathtaking landscapes,
 - ⚡ **Optimized Performance** — A Fabric-based experience with performance-focused improvements.
 - 💕 **Made for Two** — A relaxing survival adventure to enjoy together.
 
+Faithful 64x and its Ore Borders, Clear Glass, and Visual Waxed Copper Items
+add-ons are included as resource packs. Enable your choices from Minecraft's
+resource pack menu, with the add-ons above Faithful. Faithful
+64x is by the [Faithful team](https://faithfulpack.net/); Ore Borders 64x is by
+[Hedreon and AyaanThe0ne](https://faithfulpack.net/addons/ore-borders-64x).
+See the [Faithful license](https://faithfulpack.net/license) and
+[add-on license](https://github.com/Hedreon/Addons/blob/main/LICENSE).
+Clear Glass is by [lulyanh](https://modrinth.com/resourcepack/faithful-64x-clear-glass),
+and Visual Waxed Copper Items is by
+[TQNL](https://github.com/TQNL/TQNL-Faithful-Add-ons).
+
 ## 🎮 Gameplay
 
 - **Minecraft:** Java Edition 26.3

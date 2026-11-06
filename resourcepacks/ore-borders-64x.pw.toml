@@ -1,0 +1,8 @@
+name = "Ore Borders 64x"
+filename = "OreBorders_64x_26.3.zip"
+side = "client"
+
+[download]
+url = "https://github.com/Hedreon/Addons/releases/download/ob-26.3/OreBorders_64x_26.3.zip"
+hash-format = "sha256"
+hash = "363dd8ff9590a5502a17a13df8c677db47751a3c715a5c78c3647d60eebd41b9"
