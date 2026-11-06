@@ -45,6 +45,10 @@ biome colors and the hovered-biome label on the world map. Xaero copies these
 profiles into its config directory on first launch; existing local profiles are
 left untouched.
 
+Unified Xaero Worldmap shares explored map areas between players. It is included
+for both sides, so multiplayer servers and every player need to use the pack's
+same mod version for map synchronization.
+
 The minimap profile also displays tracked players on both maps. Xaero can only
 show positions shared by the server or a supported party/tracking integration;
 these client settings do not enable server-side tracking.
