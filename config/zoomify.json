@@ -1,0 +1,6 @@
+{
+  "zoomInTime": 0.3,
+  "zoomOutTime": 0.3,
+  "zoomInTransition": "ease_out_sine",
+  "zoomOutTransition": "ease_in_sine"
+}

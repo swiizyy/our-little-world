@@ -39,7 +39,9 @@ script. Simply Cozy - Halloween Update is also included in the pack.
 The current pack includes a small set of client-side visual overrides in
 `config/`: Sodium uses alternative fluid shaping for more consistent-looking
 water around waterlogged builds while keeping crisp pixel textures, and
-LambDynamicLights keeps fancy lighting and illuminated entities/fireflies.
+LambDynamicLights keeps fancy lighting and illuminated entities/fireflies. Jade
+uses its dark tooltip theme with slightly softened opacity, and Zoomify uses
+smooth, short zoom transitions.
 These settings do not change survival balance or world generation. BetterGrassify
 already defaults to fancy grass and Lambda-style snow, so it needs no override.
 

@@ -1,12 +1,20 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/jade/jade.json"
+hash = "9e372bedaada1b28274da8215cdf57081634b0cfefc34299bb6233546506863c"
+
+[[files]]
 file = "config/lambdynlights.toml"
 hash = "cd47e5cf593236109b8d49eb4ddd9095bb3409703dfa707201132af03eedcc8d"
 
 [[files]]
 file = "config/sodium-options.json"
 hash = "110fe9d2295c52549c7282ec386a3c161fe427411c620b8aa810700f7493d8ae"
+
+[[files]]
+file = "config/zoomify.json"
+hash = "8a31a0b4d93c6ad5ca3fafc3f7179c475794f10506fde2b0774a68d79735f426"
 
 [[files]]
 file = "defaultconfigs/xaero/minimap/profiles/default.cfg"
