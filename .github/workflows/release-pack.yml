@@ -130,31 +130,24 @@ jobs:
               output.write(f"ASSET_VERSION={pack_version.replace('+', '-')}\n")
               output.write(f"RELEASE_TAG={release_tag}\n")
           PY
-      - name: Refresh and export modpacks
+      - name: Refresh and export Modrinth pack
         run: |
           "$(go env GOPATH)/bin/packwiz" refresh
           "$(go env GOPATH)/bin/packwiz" modrinth export \
             --output "our-little-world-${ASSET_VERSION}.mrpack"
-          "$(go env GOPATH)/bin/packwiz" curseforge export \
-            --output "our-little-world-${ASSET_VERSION}-curseforge.zip"
       - name: Upload branch build
         if: github.event_name == 'push' && github.ref_type == 'branch'
         uses: actions/upload-artifact@v4
         with:
           name: our-little-world-${{ env.ASSET_VERSION }}
-          path: |
-            our-little-world-${{ env.ASSET_VERSION }}.mrpack
-            our-little-world-${{ env.ASSET_VERSION }}-curseforge.zip
+          path: our-little-world-${{ env.ASSET_VERSION }}.mrpack
           if-no-files-found: error
       - name: Create GitHub Release
         if: github.ref_type == 'tag' || github.event_name == 'workflow_dispatch'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          ASSETS=(
-            "our-little-world-${ASSET_VERSION}.mrpack"
-            "our-little-world-${ASSET_VERSION}-curseforge.zip"
-          )
+          ASSETS=("our-little-world-${ASSET_VERSION}.mrpack")
           if gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
             gh release upload "$RELEASE_TAG" "${ASSETS[@]}" --clobber
           else
@@ -205,40 +198,3 @@ jobs:
             --header "User-Agent: swiizyy/our-little-world GitHubActions" \
             --form "data=@modrinth-version.json;type=application/json" \
             --form "pack=@our-little-world-${ASSET_VERSION}.mrpack"
-      - name: Publish version to CurseForge when configured
-        env:
-          CURSEFORGE_API_TOKEN: ${{ secrets.CURSEFORGE_API_TOKEN }}
-          CURSEFORGE_PROJECT_ID: ${{ vars.CURSEFORGE_PROJECT_ID }}
-        run: |
-          if [[ -z "$CURSEFORGE_API_TOKEN" || -z "$CURSEFORGE_PROJECT_ID" ]]; then
-            echo "::notice::Set CURSEFORGE_API_TOKEN and CURSEFORGE_PROJECT_ID to publish on CurseForge."
-            exit 0
-          fi
-
-          python3 - <<'PY'
-          import json
-          import os
-          import tomllib
-          from pathlib import Path
-
-          with open("pack.toml", "rb") as pack_file:
-              pack = tomllib.load(pack_file)
-
-          Path("curseforge-metadata.json").write_text(json.dumps({
-              "changelog": f'Release {os.environ["PACK_VERSION"]}',
-              "changelogType": "text",
-              "displayName": f'{pack["name"]} {os.environ["PACK_VERSION"]}',
-              "gameVersionNames": [
-                  pack["versions"]["minecraft"],
-                  "Fabric",
-                  "Client",
-              ],
-              "releaseType": os.environ["VERSION_CHANNEL"],
-          }))
-          PY
-          curl --fail-with-body --silent --show-error \
-            --request POST \
-            "https://minecraft.curseforge.com/api/projects/${CURSEFORGE_PROJECT_ID}/upload-file" \
-            --header "X-Api-Token: ${CURSEFORGE_API_TOKEN}" \
-            --form "metadata=<curseforge-metadata.json" \
-            --form "file=@our-little-world-${ASSET_VERSION}-curseforge.zip"

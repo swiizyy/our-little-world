@@ -1,87 +1,48 @@
-# Our Little World
+# 🌸 Our Little World — Cozy Edition
 
-Community Minecraft Java Cozy Adventure modpack.
+**Two hearts. One world. Endless adventures. ♡**
 
-Project foundations are developed on `dev` and reviewed into `main`.
+![A cozy cottage overlooking a lake at sunset](assets/cozy-world.png)
 
-## Modpack development
+A cozy Minecraft Fabric modpack for building, exploring, decorating, and
+making memories together. Settle into a cottage, tend a little farm, and see
+where the adventure takes you.
 
-The modpack is managed with [packwiz](https://packwiz.infra.link/). Install the
-packwiz CLI by following its [installation guide](https://packwiz.infra.link/installation/),
-then run these commands from the repository root:
+**Minecraft Java 26.3** · **Fabric 0.20.1** · **Survival** · **Cozy adventure**
 
-```sh
-packwiz refresh
-packwiz modrinth export
-```
+[Getting started](#-getting-started) · [Français](README.fr.md) ·
+[For contributors](CONTRIBUTING.md)
 
-Add mods with `packwiz modrinth install <mod>` or `packwiz curseforge install <mod>`.
-Run `packwiz refresh` after manually changing mod metadata or pack files so the
-index and its integrity hash stay up to date. GitHub Actions refreshes the index on
-every push and pull request and checks that no tracked Packwiz metadata changes
-are needed.
+## ✨ Make the world yours
 
-### Optimization mods
+- 🏡 **Build a home:** furnish a cottage and connect your favorite places with
+  bridges, doors, windows, and decorations from Macaw's mods.
+- 🥕 **Grow and cook:** turn your harvest into meals with Farmer's Delight.
+- 🌿 **Explore together:** encounter wildlife with Naturalist, find your way
+  with maps, and revisit favorite places with Waystones.
+- 🌷 **Enjoy the atmosphere:** improve lighting, animations, and visuals with
+  mods including Iris, LambDynamicLights, and Entity Model Features.
+- ⚡ **Keep things smooth:** performance mods such as Sodium, Lithium, and
+  FerriteCore help make room for more adventures.
 
-The initial optimization baseline uses the 47 mod versions from
-[Fabulously Optimized 15.0.0-beta.3](https://modrinth.com/modpack/fabulously-optimized/version/FLkaba1E)
-for Minecraft 26.3 and Fabric 0.20.1. Packwiz metadata links to the original
-Modrinth files. Fabulously Optimized's resource packs and configuration overrides
-are not included, so this is not an exact reproduction of that modpack.
+## 🎮 Getting started
 
-To update these mods to the latest Fabulously Optimized version compatible with
-the pack's Minecraft and Fabric versions, run:
+1. Download a `.mrpack` from the repository's [GitHub Releases](https://github.com/swiizyy/our-little-world/releases)
+   when one is available. The project is currently in alpha.
+2. Import the file into a launcher that supports Modrinth modpacks, such as the
+   [Modrinth App](https://modrinth.com/app) or
+   [Prism Launcher](https://prismlauncher.org/).
+3. Launch the new instance, create or join a world, and start exploring.
 
-```sh
-python3 -m pip install -r scripts/requirements.txt
-python3 scripts/sync_fabulously_optimized.py
-```
+For multiplayer, both players should use the same pack version. The pack
+includes e4mc and Simple Voice Chat; consult their setup instructions for
+hosting and voice chat.
 
-The script requires Python 3.9+ and Packwiz. It chooses the most recent upstream
-release using the exact Minecraft and Fabric loader versions in `pack.toml`,
-including beta and alpha releases. It checks the upstream archive's SHA-512 hash,
-installs the exact upstream mod versions, and refreshes the pack index. It keeps
-mods that are no longer in Fabulously Optimized, as well as locally added mods.
-Updated mods' Packwiz metadata is regenerated; review the resulting changes
-before releasing.
+---
 
-The **Sync Fabulously Optimized** workflow also checks daily at 04:23 UTC and
-opens or updates a pull request against the default branch when there are mod
-changes. It can be started manually from GitHub Actions. Scheduled workflows
-run only when the workflow exists on the default branch; the current default is
-`dev`. Enable **Allow GitHub Actions to create and approve pull requests** in
-repository Settings → Actions → General → Workflow permissions. The pull request
-must be reviewed and merged before the updates become part of the pack; the
-workflow does not create a release. The sync job runs the tests and verifies the
-refreshed index before opening the pull request. Pull requests created with
-`GITHUB_TOKEN` do not automatically trigger other workflows, so run any
-additional required validation separately before merging. GitHub may delay
-scheduled runs or disable them after prolonged repository inactivity.
+*Made with love, for our little world. ♡*
 
-The CurseForge export embeds mods without CurseForge metadata as JARs. Their
-redistribution permissions and CurseForge approval have not been verified; do not
-run or publish that export until they have been reviewed. The release workflow
-currently exports and uploads it automatically, so do not trigger that workflow
-with these mods until the review is complete.
+## 🛠️ For contributors
 
-### Releasing
-
-To create a version with a click, open **Actions → Release modpack → Run
-workflow**, choose `stable`, `beta`, or `alpha` (default: `beta`), then run it.
-The workflow generates a unique version and creates a GitHub Release with both
-downloadable pack formats.
-
-Push a semantic-version tag such as `v0.1.0` or `v0.2.0-beta.1` to create a
-GitHub Release with downloadable Modrinth `.mrpack` and CurseForge `.zip` files.
-Tags ending in `-alpha...` publish as alpha; other prerelease tags publish as
-beta; tags without a prerelease suffix publish as stable releases.
-
-Push to the `stable`, `beta`, or `alpha` branch to create a uniquely versioned
-continuous build, downloadable from the GitHub Actions run. The matching branch
-sets the platform release channel.
-
-To publish to Modrinth, add the `MODRINTH_TOKEN` repository secret and the
-`MODRINTH_PROJECT_ID` repository variable. To publish to CurseForge, add the
-`CURSEFORGE_API_TOKEN` secret and the `CURSEFORGE_PROJECT_ID` variable. Without
-either platform's values, the workflow still creates the downloadable
-GitHub release or Actions artifact.
+See the [contributor guide](CONTRIBUTING.md) for Packwiz, mod synchronization,
+and release instructions.

@@ -1,0 +1,13 @@
+name = "Days Played"
+filename = "DaysPlayed-mc26.3-1.5.0.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/DVuhus8H/versions/ZwXLbAmp/DaysPlayed-mc26.3-1.5.0.jar"
+hash-format = "sha512"
+hash = "9a3aa2e41753231f105936d0a0da03188e3173fdb5afab5fc5936ca077022d0caf48a4362bd55964d066b030684a4623300ae7a993dca9cfb1b51ab04a515857"
+
+[update]
+[update.modrinth]
+mod-id = "DVuhus8H"
+version = "ZwXLbAmp"
