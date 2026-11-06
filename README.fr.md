@@ -20,6 +20,8 @@ rencontrez la faune et partez explorer à votre rythme.
   Delight.
 - 🎒 **Emportez vos affaires :** transportez plus d'objets avec Traveler's
   Backpack et organisez vos réserves avec Storage Drawers.
+- 🧰 **Gardez les infos utiles à portée de main :** consultez votre inventaire
+  avec InventoryHUD+ et les recettes avec JEI.
 - 🌿 **Explorez ensemble :** partagez les zones explorées sur Xaero's World Map,
   découvrez la faune avec Naturalist et retrouvez vos lieux préférés avec
   Waystones.

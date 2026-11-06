@@ -20,6 +20,8 @@ where the adventure takes you.
 - 🥕 **Grow and cook:** turn your harvest into meals with Farmer's Delight.
 - 🎒 **Bring your essentials:** carry extra supplies with Traveler's Backpack
   and keep bulk storage tidy with Storage Drawers.
+- 🧰 **Keep useful info close:** check your inventory at a glance with
+  InventoryHUD+ and look up item recipes with JEI.
 - 🌿 **Explore together:** share explored areas on Xaero's World Map, encounter
   wildlife with Naturalist, and revisit favorite places with Waystones.
 - 🌷 **Enjoy the atmosphere:** improve lighting, animations, and visuals with

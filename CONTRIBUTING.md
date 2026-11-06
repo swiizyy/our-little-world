@@ -36,6 +36,9 @@ Traveler's Backpack and Storage Drawers are additional gameplay mods selected
 for Minecraft 26.3; they are not managed by the Fabulously Optimized sync
 script. Simply Cozy - Halloween Update is also included in the pack.
 
+InventoryHUD+ and JEI provide client-side inventory and recipe information.
+JEI's required MezzConfig library is included automatically by Packwiz.
+
 The current pack includes a small set of client-side visual overrides in
 `config/`: Sodium uses alternative fluid shaping for more consistent-looking
 water around waterlogged builds while keeping crisp pixel textures, and
