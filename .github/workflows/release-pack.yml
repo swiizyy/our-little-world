@@ -183,6 +183,7 @@ jobs:
               "name": f'{pack["name"]} {os.environ["PACK_VERSION"]}',
               "version_number": os.environ["PACK_VERSION"],
               "changelog": f'Release {os.environ["PACK_VERSION"]}',
+              "dependencies": [],
               "game_versions": [pack["versions"]["minecraft"]],
               "version_type": os.environ["VERSION_CHANNEL"],
               "loaders": ["fabric"],
