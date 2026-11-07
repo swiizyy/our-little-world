@@ -25,6 +25,9 @@ Clear Glass is by [lulyanh](https://modrinth.com/resourcepack/faithful-64x-clear
 and Visual Waxed Copper Items is by
 [TQNL](https://github.com/TQNL/TQNL-Faithful-Add-ons).
 
+Creators and declared licenses for all mods and resource packs are listed in
+[CREDITS.txt](https://github.com/swiizyy/our-little-world/blob/HEAD/CREDITS.txt).
+
 ## 🎮 Gameplay
 
 - **Minecraft:** Java Edition 26.3

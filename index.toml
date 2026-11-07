@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CREDITS.txt"
-hash = "9591310706288e0d4a2e817e38d7a973d366e4e2babb8829c6347f5704167020"
+hash = "f5ecffa9ec4b43b5594827f579b5f8e2d51c8ba0658eecdacd22d73bbe6f2488"
 
 [[files]]
 file = "LICENSE-Ore-Borders.txt"
@@ -11,6 +11,10 @@ hash = "7bf11210dae3c397e40cf50bdc1db801d8e6198e521afbb2837e7c4b76a4283a"
 [[files]]
 file = "config/inventoryhud.json"
 hash = "dee97346a2d97cc57bd21a73fe0083dc3744596c0962d1ba69a115640af46b7d"
+
+[[files]]
+file = "config/isxander-main-menu-credits.json"
+hash = "ce0f5e0ae4a42a543de5fe5dafc29be153d0251d6785b85bdcfb8c8c027676f9"
 
 [[files]]
 file = "config/jade/jade.json"

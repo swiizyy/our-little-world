@@ -52,14 +52,11 @@ l'hébergement et le chat vocal.
 
 ## Crédits
 
-Le pack inclut [Faithful 64x](https://faithfulpack.net/), créé par l'équipe
-Faithful, et [Ore Borders 64x](https://faithfulpack.net/addons/ore-borders-64x),
-créé par Hedreon et AyaanThe0ne. Voir la
-[licence Faithful](https://faithfulpack.net/license) et la
-[licence de l'extension](LICENSE-Ore-Borders.txt).
-Clear Glass est créé par [lulyanh](https://modrinth.com/resourcepack/faithful-64x-clear-glass),
-et Visual Waxed Copper Items par
-[TQNL](https://github.com/TQNL/TQNL-Faithful-Add-ons).
+La liste complète des créateurs et licences déclarées des **72 mods** et des
+packs de ressources est dans [CREDITS.txt](CREDITS.txt). Elle est aussi
+accessible depuis l'écran titre en jeu. Les licences personnalisées ou
+« Tous droits réservés » sont indiquées pour consulter les conditions de chaque
+projet.
 
 ---
 

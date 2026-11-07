@@ -1,17 +1,249 @@
-Our Little World includes Faithful 64x, a resource pack created by the Faithful team.
-Website: https://faithfulpack.net/
+OUR LITTLE WORLD — CREDITS AND LICENSES
+
+This pack is maintained by the Our Little World contributors.
+The 72 mods below are identified by their official Modrinth project pages.
+Creators are the Modrinth team members listed for each project when available.
+License identifiers and custom terms are those declared by each project; check
+the project page for the current terms and notices. This list is informational
+and does not replace the license text distributed by a mod author.
+
+MODS
+
+Animatica Refabricated — Coredex
+  Project: https://modrinth.com/mod/animaticarefabricated
+  License: LGPL-3.0-only (https://spdx.org/licenses/LGPL-3.0-only.html)
+[EMF] Entity Model Features — Traben
+  Project: https://modrinth.com/mod/entity-model-features
+  License: LGPL-3.0-only (https://spdx.org/licenses/LGPL-3.0-only.html)
+[ETF] Entity Texture Features — Traben
+  Project: https://modrinth.com/mod/entitytexturefeatures
+  License: LGPL-3.0-only (https://spdx.org/licenses/LGPL-3.0-only.html)
+Balm — BlayTheNinth
+  Project: https://modrinth.com/mod/balm
+  License and modpack permissions: https://mods.twelveiterations.com/permissions
+Better Block Entities — Adre278, cseden
+  Project: https://modrinth.com/mod/better-block-entities
+  License: LGPL-3.0-or-later (https://spdx.org/licenses/LGPL-3.0-or-later.html)
+Better Mount HUD — Lortseam
+  Project: https://modrinth.com/mod/better-mount-hud
+  License: GPL-3.0-only (https://spdx.org/licenses/GPL-3.0-only.html)
+BetterGrassify — UltimatChamp, JayemCeekay
+  Project: https://modrinth.com/mod/bettergrassify
+  License: Apache-2.0 (https://spdx.org/licenses/Apache-2.0.html)
+Cape Provider — litetex
+  Project: https://modrinth.com/mod/cape-provider
+  License: LGPL-2.1-or-later (https://spdx.org/licenses/LGPL-2.1-or-later.html)
+Cloth Config API — shedaniel
+  Project: https://modrinth.com/mod/cloth-config
+  License: LGPL-3.0-only (https://spdx.org/licenses/LGPL-3.0-only.html)
+Config Manager — TheBossMagnus
+  Project: https://modrinth.com/mod/configmanager
+  License: LGPL-3.0-only (https://spdx.org/licenses/LGPL-3.0-only.html)
+Continuity — creator not listed in the Modrinth team
+  Project: https://modrinth.com/mod/continuity
+  License: LGPL-3.0-only (https://spdx.org/licenses/LGPL-3.0-only.html)
+Controlify — isxander
+  Project: https://modrinth.com/mod/controlify
+  License: LGPL-3.0-or-later (https://spdx.org/licenses/LGPL-3.0-or-later.html)
+Crash Assistant — KostromDan
+  Project: https://modrinth.com/mod/crash-assistant
+  License: custom (https://github.com/KostromDan/Crash-Assistant/blob/1.19-1.20.1/LICENSE.md)
+Cubes Without Borders — Kira-NT
+  Project: https://modrinth.com/mod/cubes-without-borders
+  License: MIT (https://spdx.org/licenses/MIT.html)
+Days Played — nathancord
+  Project: https://modrinth.com/mod/daysplayed
+  License: MIT (https://spdx.org/licenses/MIT.html)
+Debugify — isxander
+  Project: https://modrinth.com/mod/debugify
+  License: LGPL-3.0-only (https://spdx.org/licenses/LGPL-3.0-only.html)
+Dynamic FPS — LostLuma, juliand665
+  Project: https://modrinth.com/mod/dynamic-fps
+  License: MIT (https://spdx.org/licenses/MIT.html)
+e4mc — vgskye
+  Project: https://modrinth.com/mod/e4mc
+  License: MIT (https://spdx.org/licenses/MIT.html)
+Entity Culling — vicisacat, Pelotrio, tr7zw
+  Project: https://modrinth.com/mod/entityculling
+  License: custom Protective License (https://github.com/tr7zw/EntityCulling/blob/1.18/LICENSE-EntityCulling)
+Fabric API — Player7457, modmuss50
+  Project: https://modrinth.com/mod/fabric-api
+  License: Apache-2.0 (https://spdx.org/licenses/Apache-2.0.html)
+Fabric Language Kotlin — Player7457, modmuss50
+  Project: https://modrinth.com/mod/fabric-language-kotlin
+  License: Apache-2.0 (https://spdx.org/licenses/Apache-2.0.html)
+FallingTree — Rakambda
+  Project: https://modrinth.com/mod/fallingtree
+  License: LGPL-3.0-only (https://spdx.org/licenses/LGPL-3.0-only.html)
+Farmer's Delight Refabricated — MehVahdJukaar, vectorwing, Cassian, ProbablyEkho
+  Project: https://modrinth.com/mod/farmers-delight-refabricated
+  License: MIT (https://spdx.org/licenses/MIT.html)
+FastQuit — contaria
+  Project: https://modrinth.com/mod/fastquit
+  License: MIT (https://spdx.org/licenses/MIT.html)
+FerriteCore — creator not listed in the Modrinth team
+  Project: https://modrinth.com/mod/ferrite-core
+  License: MIT (https://spdx.org/licenses/MIT.html)
+Forge Config API Port — Fuzs
+  Project: https://modrinth.com/mod/forge-config-api-port
+  License: MPL-2.0 (https://spdx.org/licenses/MPL-2.0.html)
+ImmediatelyFast — RaphiMC
+  Project: https://modrinth.com/mod/immediatelyfast
+  License: LGPL-3.0-or-later (https://spdx.org/licenses/LGPL-3.0-or-later.html)
+Inventory Profiles Next — blackd
+  Project: https://modrinth.com/mod/inventory-profiles-next
+  License: AGPL-3.0-or-later (https://spdx.org/licenses/AGPL-3.0-or-later.html)
+InventoryHUD+ — DmitryLovin
+  Project: https://modrinth.com/mod/inventoryhudplus
+  License: custom (https://dmitrylovin.com/LICENSE-INVHUD)
+Iris Shaders — IMS, coderbot
+  Project: https://modrinth.com/mod/iris
+  License: LGPL-3.0-only (https://spdx.org/licenses/LGPL-3.0-only.html)
+Ixeris — decce6
+  Project: https://modrinth.com/mod/ixeris
+  License: LGPL-3.0-only (https://github.com/decce6/Ixeris/blob/master/LICENSE)
+Jade — creator not listed in the Modrinth team
+  Project: https://modrinth.com/mod/jade
+  License: CC-BY-NC-SA-4.0 (https://spdx.org/licenses/CC-BY-NC-SA-4.0.html)
+Just Enough Items (JEI) — mezz
+  Project: https://modrinth.com/mod/jei
+  License: MIT (https://spdx.org/licenses/MIT.html)
+LambDynamicLights — creator not listed in the Modrinth team
+  Project: https://modrinth.com/mod/lambdynamiclights
+  License: custom (https://github.com/LambdAurora/LambDynamicLights/blob/1.21.5/LICENSE)
+Language Reload — Jerozgen
+  Project: https://modrinth.com/mod/language-reload
+  License: MIT (https://spdx.org/licenses/MIT.html)
+libIPN — blackd
+  Project: https://modrinth.com/mod/libipn
+  License: AGPL-3.0-or-later (https://spdx.org/licenses/AGPL-3.0-or-later.html)
+Lithium — jellysquid3, 2No2Name
+  Project: https://modrinth.com/mod/lithium
+  License: LGPL-3.0-only (https://spdx.org/licenses/LGPL-3.0-only.html)
+Macaw's Bridges — sketchmacaw
+  Project: https://modrinth.com/mod/macaws-bridges
+  License: All Rights Reserved; see the project page for terms.
+Macaw's Doors — sketchmacaw
+  Project: https://modrinth.com/mod/macaws-doors
+  License: MIT (https://spdx.org/licenses/MIT.html)
+Macaw's Furniture — sketchmacaw
+  Project: https://modrinth.com/mod/macaws-furniture
+  License: All Rights Reserved; see the project page for terms.
+Macaw's Paintings — sketchmacaw
+  Project: https://modrinth.com/mod/macaws-paintings
+  License: All Rights Reserved; see the project page for terms.
+Macaw's Windows — sketchmacaw
+  Project: https://modrinth.com/mod/macaws-windows
+  License: All Rights Reserved; see the project page for terms.
+Main Menu Credits — isxander
+  Project: https://modrinth.com/mod/main-menu-credits
+  License: LGPL-3.0-only (https://spdx.org/licenses/LGPL-3.0-only.html)
+MezzConfig — mezz
+  Project: https://modrinth.com/mod/mezzconfig
+  License: MIT (https://spdx.org/licenses/MIT.html)
+MixinTrace Reborn — IAFEnvoy
+  Project: https://modrinth.com/mod/mixintrace-reborn
+  License: MIT (https://spdx.org/licenses/MIT.html)
+Mod Menu — gniftygnome, Prospector, modmuss50
+  Project: https://modrinth.com/mod/modmenu
+  License: MIT (https://spdx.org/licenses/MIT.html)
+ModernFix-mVUS — Coredex
+  Project: https://modrinth.com/mod/modernfix-mvus
+  License: LGPL-3.0-only (https://github.com/coredex-source/ModernFix---mVUS/blob/1.21.10/LICENSE)
+More Chat History — JackFred
+  Project: https://modrinth.com/mod/morechathistory
+  License: CC0-1.0 (https://spdx.org/licenses/CC0-1.0.html)
+More Culling — 1Foxy2, FX
+  Project: https://modrinth.com/mod/moreculling
+  License: GPL-3.0-only (https://spdx.org/licenses/GPL-3.0-only.html)
+Naturalist — crispytwig, mattdearga
+  Project: https://modrinth.com/mod/naturalist
+  License: custom (https://github.com/starfish-studios/Naturalist/blob/1.19/LICENSE)
+Open Parties and Claims — thexaero
+  Project: https://modrinth.com/mod/open-parties-and-claims
+  License: LGPL-3.0-only (https://spdx.org/licenses/LGPL-3.0-only.html)
+OptiGUI — opekope2
+  Project: https://modrinth.com/mod/optigui
+  License: LGPL-3.0-or-later (https://spdx.org/licenses/LGPL-3.0-or-later.html)
+Polytone — MehVahdJukaar, Plantkillable, gayasslily
+  Project: https://modrinth.com/mod/polytone
+  License: GPL-3.0-or-later (https://spdx.org/licenses/GPL-3.0-or-later.html)
+Puzzle — Motschen
+  Project: https://modrinth.com/mod/puzzle
+  License: MIT (https://spdx.org/licenses/MIT.html)
+Reese's Sodium Options — FlashyReese
+  Project: https://modrinth.com/mod/reeses-sodium-options
+  License: MIT (https://spdx.org/licenses/MIT.html)
+Remove Reloading Screen — dima_dencep
+  Project: https://modrinth.com/mod/rrls
+  License: OSL-3.0 (https://spdx.org/licenses/OSL-3.0.html)
+Renice Shot — Wechirok
+  Project: https://modrinth.com/mod/renice-shot
+  License: MIT (https://github.com/wechirok/renice-shot/blob/main/LICENSE)
+Shogi — BlayTheNinth
+  Project: https://modrinth.com/mod/shogi
+  License and modpack permissions: https://mods.twelveiterations.com/permissions
+Simple Voice Chat — BreadLoaf, Stridey, henkelmax
+  Project: https://modrinth.com/mod/simple-voice-chat
+  License: All Rights Reserved; see the project page for terms.
+Simply Cozy - Halloween Update — Hyperlinkhyper, Spartan_B312, holyromanknight
+  Project: https://modrinth.com/mod/simply-cozy
+  License: CC-BY-ND-4.0 (https://spdx.org/licenses/CC-BY-ND-4.0.html)
+Skyboxify — lowercasebtw
+  Project: https://modrinth.com/mod/skyboxify
+  License: GPL-3.0-only (https://raw.githubusercontent.com/lowercasebtw/optiboxes/refs/heads/1_21_5/LICENSE)
+Sodium — IMS, jellysquid3, douira
+  Project: https://modrinth.com/mod/sodium
+  License: PolyForm Shield 1.0.0 (https://github.com/CaffeineMC/sodium/blob/dev/LICENSE.md)
+Sodium Extra — FlashyReese
+  Project: https://modrinth.com/mod/sodium-extra
+  License: LGPL-3.0-only (https://spdx.org/licenses/LGPL-3.0-only.html)
+Sodium Shadowy Path Blocks (SSPB) — Rynnavinx
+  Project: https://modrinth.com/mod/sodium-shadowy-path-blocks
+  License: LGPL-3.0-only (https://spdx.org/licenses/LGPL-3.0-only.html)
+Storage Drawers — Texelsaur
+  Project: https://modrinth.com/mod/storagedrawers
+  License: MIT (https://spdx.org/licenses/MIT.html)
+Text Placeholder API — Patbox
+  Project: https://modrinth.com/mod/placeholder-api
+  License: LGPL-3.0-only (https://spdx.org/licenses/LGPL-3.0-only.html)
+Traveler's Backpack — Tiviacz1337
+  Project: https://modrinth.com/mod/travelersbackpack
+  License: LGPL-3.0-only (https://spdx.org/licenses/LGPL-3.0-only.html)
+Waystones — BlayTheNinth
+  Project: https://modrinth.com/mod/waystones
+  License and modpack permissions: https://mods.twelveiterations.com/permissions
+Xaero's Minimap — thexaero
+  Project: https://modrinth.com/mod/xaeros-minimap
+  License: All Rights Reserved; see the project page for terms.
+Xaero's World Map — thexaero
+  Project: https://modrinth.com/mod/xaeros-world-map
+  License: All Rights Reserved; see the project page for terms.
+YetAnotherConfigLib (YACL) — isxander
+  Project: https://modrinth.com/mod/yacl
+  License: LGPL-3.0-or-later (https://spdx.org/licenses/LGPL-3.0-or-later.html)
+Zoomify — isxander
+  Project: https://modrinth.com/mod/zoomify
+  License: LGPL-3.0-only (https://spdx.org/licenses/LGPL-3.0-only.html)
+
+RESOURCE PACKS
+
+Faithful 64x is by the Faithful team.
+Project: https://faithfulpack.net/
 License: https://faithfulpack.net/license
 
 Ore Borders 64x is an add-on by Hedreon and AyaanThe0ne.
-Website: https://faithfulpack.net/addons/ore-borders-64x
+Project: https://faithfulpack.net/addons/ore-borders-64x
 License: LICENSE-Ore-Borders.txt
 
 Faithful 64x - Clear Glass is by lulyanh.
-Website: https://modrinth.com/resourcepack/faithful-64x-clear-glass
+Project: https://modrinth.com/resourcepack/faithful-64x-clear-glass
 The resource pack includes its license and credits.
 
 Visual Waxed Copper Items 64x is by TQNL, using Faithful textures and inspired
-by Vanilla Tweaks. Its resource pack includes original artist credits and licenses.
-Website: https://github.com/TQNL/TQNL-Faithful-Add-ons
+by Vanilla Tweaks. Its resource pack includes original artist credits and
+licenses.
+Project: https://github.com/TQNL/TQNL-Faithful-Add-ons
 
-Enable the packs under Options > Resource Packs, with add-ons above Faithful.
+Resource packs are optional. Enable them under Options > Resource Packs, with
+add-ons above Faithful.

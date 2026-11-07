@@ -1,0 +1,26 @@
+{
+  "main_menu": {
+    "top_left": [],
+    "top_right": [],
+    "bottom_left": [
+      {
+        "text": "Our Little World | Credits & licenses",
+        "color": "light_purple",
+        "underlined": true,
+        "click_event": {
+          "action": "open_url",
+          "url": "https://github.com/swiizyy/our-little-world/blob/HEAD/CREDITS.txt"
+        }
+      }
+    ],
+    "bottom_right": [],
+    "mod_blacklist": []
+  },
+  "pause_menu": {
+    "top_left": [],
+    "top_right": [],
+    "bottom_left": [],
+    "bottom_right": [],
+    "mod_blacklist": []
+  }
+}
