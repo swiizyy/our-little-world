@@ -28,6 +28,15 @@ and Visual Waxed Copper Items is by
 Creators and declared licenses for all mods and resource packs are listed in
 [CREDITS.txt](https://github.com/swiizyy/our-little-world/blob/HEAD/CREDITS.txt).
 
+## 💞 Play together
+
+Everyone should use the same pack version. To host without port forwarding,
+open your world to LAN and share the address e4mc posts in chat. Guests can
+join through **Multiplayer → Direct Connection** with that address.
+
+Proximity voice chat works through e4mc too, without separate UDP port setup.
+Press **V** in game to choose and test your microphone.
+
 ## 🎮 Gameplay
 
 - **Minecraft:** Java Edition 26.3
@@ -50,6 +59,17 @@ Construisez votre maison de rêve, explorez de magnifiques paysages, découvrez 
 - 🦋 Découverte de la faune et de la nature.
 - ✨ Améliorations visuelles et optimisations.
 - 💕 Une aventure paisible à partager à deux.
+
+### 💞 Jouer ensemble
+
+Chaque joueur doit utiliser la même version du modpack. Pour héberger sans
+ouvrir de port, ouvrez votre monde au LAN et partagez l'adresse qu'e4mc affiche
+dans le chat. Les autres joueurs peuvent la saisir dans **Multijoueur →
+Connexion directe**.
+
+Le chat vocal de proximité fonctionne aussi via e4mc, sans configuration de
+port UDP supplémentaire. Appuyez sur **V** en jeu pour choisir et tester votre
+microphone.
 
 ---
 

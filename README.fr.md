@@ -22,9 +22,8 @@ rencontrez la faune et partez explorer à votre rythme.
   Backpack et organisez vos réserves avec Storage Drawers.
 - 🧰 **Gardez les infos utiles à portée de main :** consultez votre inventaire
   avec InventoryHUD+ et les recettes avec JEI.
-- 🌿 **Explorez ensemble :** partagez les zones explorées sur Xaero's World Map,
-  découvrez la faune avec Naturalist et retrouvez vos lieux préférés avec
-  Waystones.
+- 🌿 **Explorez ensemble :** repérez-vous avec Xaero's World Map, découvrez la
+  faune avec Naturalist et retrouvez vos lieux préférés avec Waystones.
 - 🌷 **Profitez de l'ambiance :** améliorez l'éclairage, les animations et les
   graphismes grâce notamment à Iris, LambDynamicLights, Entity Model Features
   et Simply Cozy - Halloween Update.

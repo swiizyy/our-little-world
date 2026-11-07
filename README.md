@@ -22,8 +22,8 @@ where the adventure takes you.
   and keep bulk storage tidy with Storage Drawers.
 - 🧰 **Keep useful info close:** check your inventory at a glance with
   InventoryHUD+ and look up item recipes with JEI.
-- 🌿 **Explore together:** share explored areas on Xaero's World Map, encounter
-  wildlife with Naturalist, and revisit favorite places with Waystones.
+- 🌿 **Explore together:** navigate with Xaero's World Map, encounter wildlife
+  with Naturalist, and revisit favorite places with Waystones.
 - 🌷 **Enjoy the atmosphere:** improve lighting, animations, and visuals with
   mods including Iris, LambDynamicLights, Entity Model Features, and the
   Simply Cozy - Halloween Update.
