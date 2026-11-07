@@ -376,11 +376,6 @@ hash = "61cfca871c71a3e94fef5823538cf5eadc831809cb59288812bf9f298bb1fe4b"
 metafile = true
 
 [[files]]
-file = "mods/unified-xaero-worldmap.pw.toml"
-hash = "1ea70c18686db45caf07ece0120f4a39ce05f2393dedd38158a3058ccc134671"
-metafile = true
-
-[[files]]
 file = "mods/waystones.pw.toml"
 hash = "85e00f97c2d58db3167bb6608558aa956654f5b0570e0abac082a1d0d4e3c19d"
 metafile = true
