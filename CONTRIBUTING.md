@@ -111,6 +111,8 @@ delay scheduled runs or disable them after prolonged repository inactivity.
 From **Actions → Release modpack → Run workflow**, select a branch and the
 `stable`, `beta`, or `alpha` channel (default: `beta`). The workflow generates
 a unique version and creates a GitHub Release containing the `.mrpack`.
+Release notes are generated from commit subjects since the previous reachable
+tag and used for both the GitHub Release and the Modrinth version changelog.
 
 Alternatively:
 
