@@ -43,13 +43,20 @@ Faithful 64x and its Ore Borders, Clear Glass, and Visual Waxed Copper Items
 add-ons are included but not enabled automatically. In **Options → Resource
 Packs**, select the ones you like and place the add-ons above Faithful.
 
-For multiplayer, both players should use the same pack version. The pack
-includes e4mc and Simple Voice Chat; consult their setup instructions for
-hosting and voice chat.
+## 💞 Play together
+
+Everyone should use the same pack version. To host without port forwarding,
+open your world to LAN and send the address e4mc posts in chat; guests can use
+**Multiplayer → Direct Connection** with that address.
+
+Proximity voice chat works through that e4mc connection too—no separate UDP
+port setup is needed. Press **V** in game to select and test your microphone.
+If voice does not connect, confirm that every player is using this pack version
+and has restarted the game after updating.
 
 ## Credits
 
-See [CREDITS.txt](CREDITS.txt) for creators and declared licenses for all 72
+See [CREDITS.txt](CREDITS.txt) for creators and declared licenses for all 73
 mods and the included resource packs. The same list is linked from the in-game
 title screen. Custom and All Rights Reserved licenses are identified so players
 can consult each project's terms.

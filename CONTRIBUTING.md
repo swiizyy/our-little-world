@@ -36,6 +36,11 @@ Traveler's Backpack and Storage Drawers are additional gameplay mods selected
 for Minecraft 26.3; they are not managed by the Fabulously Optimized sync
 script. Simply Cozy - Halloween Update is also included in the pack.
 
+Voice Bridge for e4mc is a small multiplayer compatibility mod outside that
+sync. It routes Simple Voice Chat through an e4mc-hosted world, avoiding the
+separate UDP port that voice chat normally requires. Keep it in the pack with
+e4mc and Simple Voice Chat so the documented quick-hosting flow keeps working.
+
 InventoryHUD+ and JEI provide client-side inventory and recipe information.
 JEI's required MezzConfig library is included automatically by Packwiz.
 

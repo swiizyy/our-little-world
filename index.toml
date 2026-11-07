@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CREDITS.txt"
-hash = "f5ecffa9ec4b43b5594827f579b5f8e2d51c8ba0658eecdacd22d73bbe6f2488"
+hash = "fc5e7c8e479d40f15e949d4d6595fd7c58aa924689fb63a1448773e0c575c1d4"
 
 [[files]]
 file = "LICENSE-Ore-Borders.txt"
@@ -377,6 +377,11 @@ metafile = true
 [[files]]
 file = "mods/travelersbackpack.pw.toml"
 hash = "61cfca871c71a3e94fef5823538cf5eadc831809cb59288812bf9f298bb1fe4b"
+metafile = true
+
+[[files]]
+file = "mods/voice-bridge-for-e4mc.pw.toml"
+hash = "c1b3306a6d5938f8e4a932e5bb36d298aa21aabc7f1e5fe870d34bdee701b47a"
 metafile = true
 
 [[files]]

@@ -1,0 +1,13 @@
+name = "Voice Bridge for e4mc"
+filename = "e4mc-voice-bridge-1.1.0+26.3.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/nLkVETsG/versions/nfP6KquY/e4mc-voice-bridge-1.1.0%2B26.3.jar"
+hash-format = "sha512"
+hash = "dd2ad549a80cea72d3c5747f62820ca1394bedeab3fc009c7be05ba9b77e4309f3c34f019efdaa768cb2f43817f0494cc8c15e3ab7c1f308d2e37e1c51ddd4d9"
+
+[update]
+[update.modrinth]
+mod-id = "nLkVETsG"
+version = "nfP6KquY"

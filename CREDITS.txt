@@ -1,7 +1,7 @@
 OUR LITTLE WORLD — CREDITS AND LICENSES
 
 This pack is maintained by the Our Little World contributors.
-The 72 mods below are identified by their official Modrinth project pages.
+The 73 mods below are identified by their official Modrinth project pages.
 Creators are the Modrinth team members listed for each project when available.
 License identifiers and custom terms are those declared by each project; check
 the project page for the current terms and notices. This list is informational
@@ -210,6 +210,9 @@ Text Placeholder API — Patbox
 Traveler's Backpack — Tiviacz1337
   Project: https://modrinth.com/mod/travelersbackpack
   License: LGPL-3.0-only (https://spdx.org/licenses/LGPL-3.0-only.html)
+Voice Bridge for e4mc — creator not listed in the Modrinth team
+  Project: https://modrinth.com/mod/voice-bridge-for-e4mc
+  License: MIT (https://spdx.org/licenses/MIT.html)
 Waystones — BlayTheNinth
   Project: https://modrinth.com/mod/waystones
   License and modpack permissions: https://mods.twelveiterations.com/permissions

@@ -46,13 +46,22 @@ Items sont inclus mais ne sont pas activés automatiquement. Dans **Options →
 Packs de ressources**, sélectionnez ceux qui vous plaisent et placez les
 extensions au-dessus de Faithful.
 
-Pour jouer ensemble, utilisez la même version du modpack. Le pack inclut e4mc
-et Simple Voice Chat ; consultez leurs instructions de configuration pour
-l'hébergement et le chat vocal.
+## 💞 Jouer ensemble
+
+Chaque joueur doit utiliser la même version du modpack. Pour héberger sans
+ouvrir de port, ouvrez votre monde au LAN et envoyez l'adresse qu'e4mc affiche
+dans le chat ; les autres joueurs peuvent la saisir dans **Multijoueur →
+Connexion directe**.
+
+Le chat vocal de proximité fonctionne aussi via cette connexion e4mc, sans
+configuration de port UDP supplémentaire. Appuyez sur **V** en jeu pour
+choisir et tester votre microphone. S'il ne se connecte pas, vérifiez que tout
+le monde utilise cette version du pack et a redémarré le jeu après la mise à
+jour.
 
 ## Crédits
 
-La liste complète des créateurs et licences déclarées des **72 mods** et des
+La liste complète des créateurs et licences déclarées des **73 mods** et des
 packs de ressources est dans [CREDITS.txt](CREDITS.txt). Elle est aussi
 accessible depuis l'écran titre en jeu. Les licences personnalisées ou
 « Tous droits réservés » sont indiquées pour consulter les conditions de chaque
