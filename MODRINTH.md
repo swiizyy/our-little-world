@@ -25,7 +25,16 @@ Clear Glass is by [lulyanh](https://modrinth.com/resourcepack/faithful-64x-clear
 and Visual Waxed Copper Items is by
 [TQNL](https://github.com/TQNL/TQNL-Faithful-Add-ons).
 
-Creators and declared licenses for all mods and resource packs are listed in
+Two optional shader packs are included for use with Iris from **Options → Video
+Settings → Shader Packs**:
+
+- [Sildur's Enhanced Default](https://modrinth.com/shader/sildurs-enhanced-default-shaders)
+  for a warm, crisp look on modest hardware.
+- [Sildur's Vibrant High](https://modrinth.com/shader/sildurs-vibrant-shaders)
+  for richer lighting, reflections, and effects on powerful computers.
+
+Creators and declared licenses for all mods, resource packs, and the included
+shader packs are listed in
 [CREDITS.txt](https://github.com/swiizyy/our-little-world/blob/HEAD/CREDITS.txt).
 
 ## 💞 Play together
@@ -59,6 +68,15 @@ Construisez votre maison de rêve, explorez de magnifiques paysages, découvrez 
 - 🦋 Découverte de la faune et de la nature.
 - ✨ Améliorations visuelles et optimisations.
 - 💕 Une aventure paisible à partager à deux.
+
+Deux shaders facultatifs sont inclus et s'activent avec Iris dans **Options →
+Paramètres vidéo → Shaders** :
+
+- [Sildur's Enhanced Default](https://modrinth.com/shader/sildurs-enhanced-default-shaders)
+  pour une ambiance chaude et nette sur les configurations modestes.
+- [Sildur's Vibrant High](https://modrinth.com/shader/sildurs-vibrant-shaders)
+  pour des éclairages, reflets et effets plus riches sur les configurations
+  puissantes.
 
 ### 💞 Jouer ensemble
 

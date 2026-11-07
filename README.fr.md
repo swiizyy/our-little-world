@@ -25,8 +25,8 @@ rencontrez la faune et partez explorer à votre rythme.
 - 🌿 **Explorez ensemble :** repérez-vous avec Xaero's World Map, découvrez la
   faune avec Naturalist et retrouvez vos lieux préférés avec Waystones.
 - 🌷 **Profitez de l'ambiance :** améliorez l'éclairage, les animations et les
-  graphismes grâce notamment à Iris, LambDynamicLights, Entity Model Features
-  et Simply Cozy - Halloween Update.
+  graphismes grâce notamment aux shaders de Sildur, Iris, LambDynamicLights,
+  Entity Model Features et Simply Cozy - Halloween Update.
 - ⚡ **Jouez plus confortablement :** Sodium, Lithium et FerriteCore contribuent
   à améliorer les performances.
 
@@ -45,6 +45,14 @@ Items sont inclus mais ne sont pas activés automatiquement. Dans **Options →
 Packs de ressources**, sélectionnez ceux qui vous plaisent et placez les
 extensions au-dessus de Faithful.
 
+Deux shaders facultatifs fonctionnent avec Iris, déjà présent dans le pack.
+Choisissez-en un dans **Options → Paramètres vidéo → Shaders** :
+
+- **Sildur's Enhanced Default Fancy** pour une image chaude et nette, adaptée
+  aux configurations modestes.
+- **Sildur's Vibrant High** pour des éclairages, reflets et effets plus riches
+  sur les configurations puissantes.
+
 ## 💞 Jouer ensemble
 
 Chaque joueur doit utiliser la même version du modpack. Pour héberger sans
@@ -60,9 +68,9 @@ jour.
 
 ## Crédits
 
-La liste complète des créateurs et licences déclarées des **73 mods** et des
-packs de ressources est dans [CREDITS.txt](CREDITS.txt). Elle est aussi
-accessible depuis l'écran titre en jeu. Les licences personnalisées ou
+La liste complète des créateurs et licences déclarées des **73 mods**, packs de
+ressources et des shaders inclus est dans [CREDITS.txt](CREDITS.txt). Elle est
+aussi accessible depuis l'écran titre en jeu. Les licences personnalisées ou
 « Tous droits réservés » sont indiquées pour consulter les conditions de chaque
 projet.
 

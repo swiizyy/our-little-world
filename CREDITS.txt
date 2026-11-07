@@ -250,3 +250,16 @@ Project: https://github.com/TQNL/TQNL-Faithful-Add-ons
 
 Resource packs are optional. Enable them under Options > Resource Packs, with
 add-ons above Faithful.
+
+SHADER PACKS
+
+Sildur's Enhanced Default Shaders is by Sildur.
+Project: https://modrinth.com/shader/sildurs-enhanced-default-shaders
+License: All Rights Reserved; see the project page for terms.
+
+Sildur's Vibrant Shaders is by Sildur.
+Project: https://modrinth.com/shader/sildurs-vibrant-shaders
+License: All Rights Reserved; see the project page for terms.
+
+Shader packs are optional. Enable them under Options > Video Settings > Shader
+Packs; both Sildur shader packs require the included Iris mod.

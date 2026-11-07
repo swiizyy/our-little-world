@@ -25,7 +25,7 @@ where the adventure takes you.
 - 🌿 **Explore together:** navigate with Xaero's World Map, encounter wildlife
   with Naturalist, and revisit favorite places with Waystones.
 - 🌷 **Enjoy the atmosphere:** improve lighting, animations, and visuals with
-  mods including Iris, LambDynamicLights, Entity Model Features, and the
+  Sildur's shaders, Iris, LambDynamicLights, Entity Model Features, and the
   Simply Cozy - Halloween Update.
 - ⚡ **Keep things smooth:** performance mods such as Sodium, Lithium, and
   FerriteCore help make room for more adventures.
@@ -43,6 +43,14 @@ Faithful 64x and its Ore Borders, Clear Glass, and Visual Waxed Copper Items
 add-ons are included but not enabled automatically. In **Options → Resource
 Packs**, select the ones you like and place the add-ons above Faithful.
 
+Two optional shader packs work with the included Iris installation. Select one
+from **Options → Video Settings → Shader Packs**:
+
+- **Sildur's Enhanced Default Fancy** for a warm, crisp look with modest
+  hardware requirements.
+- **Sildur's Vibrant High** for richer lighting, reflections, and effects on
+  more powerful computers.
+
 ## 💞 Play together
 
 Everyone should use the same pack version. To host without port forwarding,
@@ -57,9 +65,9 @@ and has restarted the game after updating.
 ## Credits
 
 See [CREDITS.txt](CREDITS.txt) for creators and declared licenses for all 73
-mods and the included resource packs. The same list is linked from the in-game
-title screen. Custom and All Rights Reserved licenses are identified so players
-can consult each project's terms.
+mods, resource packs, and the included shader packs. The same list is linked
+from the in-game title screen. Custom and All Rights Reserved licenses are
+identified so players can consult each project's terms.
 
 ---
 

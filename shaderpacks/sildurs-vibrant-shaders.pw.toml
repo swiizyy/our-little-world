@@ -1,0 +1,13 @@
+name = "Sildur's Vibrant Shaders"
+filename = "Sildur's Vibrant Shaders v2.02 High.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/z8EjLYqN/versions/U71uLBqm/Sildur%27s%20Vibrant%20Shaders%20v2.02%20High.zip"
+hash-format = "sha512"
+hash = "d265c29b728e56296689a36599390378ba7538af23bf4d25f109f30d361473e82b6f01bbe15e112561f380445f06372ebdbb6079fff98b892a7ad0e0fe574424"
+
+[update]
+[update.modrinth]
+mod-id = "z8EjLYqN"
+version = "U71uLBqm"

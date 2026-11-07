@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CREDITS.txt"
-hash = "fc5e7c8e479d40f15e949d4d6595fd7c58aa924689fb63a1448773e0c575c1d4"
+hash = "159345880840e6e833222056f9737c7043ffab695a5de97803a8e921894262b7"
 
 [[files]]
 file = "LICENSE-Ore-Borders.txt"
@@ -427,4 +427,14 @@ metafile = true
 [[files]]
 file = "resourcepacks/visual-waxed-copper-items-64x.pw.toml"
 hash = "4b8ebf6145e275eadfd58cefe9f94aad5e5b806781f423caeeb387f8f75c75aa"
+metafile = true
+
+[[files]]
+file = "shaderpacks/sildurs-enhanced-default-shaders.pw.toml"
+hash = "229bc49795845b51a0c71a52f97a9264a3bd96596e8f49f6a812dc07734e53a3"
+metafile = true
+
+[[files]]
+file = "shaderpacks/sildurs-vibrant-shaders.pw.toml"
+hash = "1875b74122553ff100f455a00fae6c4e371b5664eb52ec48c6cd21e5c0c47fc6"
 metafile = true
