@@ -1,7 +1,7 @@
 OUR LITTLE WORLD — CREDITS AND LICENSES
 
 This pack is maintained by the Our Little World contributors.
-The 73 mods below are identified by their official Modrinth project pages.
+The 74 mods below are identified by their official project pages.
 Creators are the Modrinth team members listed for each project when available.
 License identifiers and custom terms are those declared by each project; check
 the project page for the current terms and notices. This list is informational
@@ -222,6 +222,12 @@ Xaero's Minimap — thexaero
 Xaero's World Map — thexaero
   Project: https://modrinth.com/mod/xaeros-world-map
   License: All Rights Reserved; see the project page for terms.
+Unified Xaero Worldmap — Navrelis
+  Project: https://www.curseforge.com/minecraft/mc-mods/unified-xaero-worldmap
+  License: All Rights Reserved; see the project page for terms.
+  Modpack permission: the author granted use in this modpack, but does not
+  permit re-uploading the mod to Modrinth. The pack uses the official
+  CurseForge download URL and does not host the JAR.
 YetAnotherConfigLib (YACL) — isxander
   Project: https://modrinth.com/mod/yacl
   License: LGPL-3.0-or-later (https://spdx.org/licenses/LGPL-3.0-or-later.html)

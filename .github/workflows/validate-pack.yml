@@ -28,6 +28,9 @@ jobs:
         run: |
           "$(go env GOPATH)/bin/packwiz" modrinth export \
             --output /tmp/our-little-world-validation.mrpack
+          python3 scripts/externalize_modrinth_file.py \
+            /tmp/our-little-world-validation.mrpack \
+            mods/unified-xaero-worldmap.pw.toml
           unzip -t /tmp/our-little-world-validation.mrpack
       - name: Test Fabulously Optimized synchronization
         run: python3 -m unittest discover -s tests -v

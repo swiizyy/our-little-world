@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CREDITS.txt"
-hash = "159345880840e6e833222056f9737c7043ffab695a5de97803a8e921894262b7"
+hash = "d4a82b5d07fbec7e14bfff91cdb12d02284183cf7078b9042f11527818bc0b7f"
 
 [[files]]
 file = "LICENSE-Ore-Borders.txt"
@@ -377,6 +377,11 @@ metafile = true
 [[files]]
 file = "mods/travelersbackpack.pw.toml"
 hash = "61cfca871c71a3e94fef5823538cf5eadc831809cb59288812bf9f298bb1fe4b"
+metafile = true
+
+[[files]]
+file = "mods/unified-xaero-worldmap.pw.toml"
+hash = "1ea70c18686db45caf07ece0120f4a39ce05f2393dedd38158a3058ccc134671"
 metafile = true
 
 [[files]]

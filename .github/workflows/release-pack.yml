@@ -137,6 +137,9 @@ jobs:
           "$(go env GOPATH)/bin/packwiz" refresh
           "$(go env GOPATH)/bin/packwiz" modrinth export \
             --output "our-little-world-${ASSET_VERSION}.mrpack"
+          python3 scripts/externalize_modrinth_file.py \
+            "our-little-world-${ASSET_VERSION}.mrpack" \
+            mods/unified-xaero-worldmap.pw.toml
       - name: Generate release notes
         run: python3 scripts/generate_release_notes.py "$GITHUB_SHA" > release-notes.md
       - name: Upload branch build

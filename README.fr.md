@@ -68,7 +68,7 @@ jour.
 
 ## Crédits
 
-La liste complète des créateurs et licences déclarées des **73 mods**, packs de
+La liste complète des créateurs et licences déclarées des **74 mods**, packs de
 ressources et des shaders inclus est dans [CREDITS.txt](CREDITS.txt). Elle est
 aussi accessible depuis l'écran titre en jeu. Les licences personnalisées ou
 « Tous droits réservés » sont indiquées pour consulter les conditions de chaque

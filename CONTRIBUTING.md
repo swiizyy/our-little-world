@@ -74,10 +74,11 @@ biome colors and the hovered-biome label on the world map. Xaero copies these
 profiles into its config directory on first launch; existing local profiles are
 left untouched.
 
-Unified Xaero Worldmap shares explored map areas between players. It is
-temporarily excluded from the pack while distribution permission is confirmed.
-If it is restored, multiplayer servers and every player will need to use the
-pack's same mod version for map synchronization.
+Unified Xaero Worldmap shares explored map areas between players. It is included
+for both sides, so multiplayer servers and every player need to use the pack's
+same mod version for map synchronization. Its author has permitted its use in
+this modpack, but has not permitted re-uploading the mod to Modrinth; the
+Packwiz metadata therefore keeps the official CurseForge download URL.
 
 The minimap profile also displays tracked players on both maps. Xaero can only
 show positions shared by the server or a supported party/tracking integration;
