@@ -1,6 +1,6 @@
 name = "Motschen's Better Leaves"
 filename = "Better-Leaves-9.6.zip"
-side = "both"
+side = "client"
 
 [download]
 url = "https://cdn.modrinth.com/data/uvpymuxq/versions/w4ReEpuG/Better-Leaves-9.6.zip"
