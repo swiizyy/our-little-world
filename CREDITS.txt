@@ -120,9 +120,6 @@ Jade — creator not listed in the Modrinth team
 Just Enough Items (JEI) — mezz
   Project: https://modrinth.com/mod/jei
   License: MIT (https://spdx.org/licenses/MIT.html)
-Krypton — creator not listed in the Modrinth team
-  Project: https://modrinth.com/mod/krypton
-  License: LGPL-3.0-only (https://spdx.org/licenses/LGPL-3.0-only.html)
 LambDynamicLights — creator not listed in the Modrinth team
   Project: https://modrinth.com/mod/lambdynamiclights
   License: custom (https://github.com/LambdAurora/LambDynamicLights/blob/1.21.5/LICENSE)

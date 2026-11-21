@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CREDITS.txt"
-hash = "b13c68f30e89dec4f44805455c69ad8779fe6ddd700cb0fe8199158dbf1fff1b"
+hash = "e5305811d1e312cb83ac969924628435718d01a5de28d4b6734823c12b237a6e"
 
 [[files]]
 file = "config/defaultoptions/options.txt"
@@ -191,11 +191,6 @@ metafile = true
 [[files]]
 file = "mods/jei.pw.toml"
 hash = "a52e4047c277a005f78956f3be63b449ad9660f6c738470cd3b2fec7d4ab30ce"
-metafile = true
-
-[[files]]
-file = "mods/krypton.pw.toml"
-hash = "4d8432eed6984a86acf6c9f056755b3f9082eb8fcb5b3f37e96498e7871e40c9"
 metafile = true
 
 [[files]]
