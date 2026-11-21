@@ -389,6 +389,11 @@ hash = "7ac50a41949c05df550b62d54051bc171491644eef010aa19bd8abe3419909b1"
 metafile = true
 
 [[files]]
+file = "resourcepacks/better-leaves.pw.toml"
+hash = "eb0b5f269171cd5b891d9bdf2c5da89698e21a71ffec1172ead75bc19411cbdc"
+metafile = true
+
+[[files]]
 file = "resourcepacks/ctm-faithful.pw.toml"
 hash = "9094cc42dbf177238d55d27c02e3b8e1535dae01fa2aa15ca7b35282e8e6dac5"
 metafile = true
