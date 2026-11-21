@@ -59,8 +59,8 @@ The current pack includes a small set of client-side visual overrides in
 `config/`: Sodium uses alternative fluid shaping for more consistent-looking
 water around waterlogged builds while keeping crisp pixel textures, and
 LambDynamicLights keeps fancy lighting and illuminated entities/fireflies. Jade
-uses its dark tooltip theme with slightly softened opacity, and Zoomify uses
-smooth, short zoom transitions. InventoryHUD+ uses a compact inventory display
+uses a darker tooltip background for better contrast against bright blocks,
+and Zoomify eases in over 180 ms and out over 220 ms. InventoryHUD+ uses a compact inventory display
 with a softened background that disappears when the inventory is empty. JEI's
 ingredient and bookmark lists are limited to six columns, leaving more room
 around the inventory.
@@ -72,7 +72,7 @@ be overridden by the player's own JEI client settings. InventoryHUD+ reads
 `config/inventoryhud.json` directly; its options can be adjusted in game.
 
 Xaero's Minimap and World Map starter profiles are in `defaultconfigs/xaero/`.
-They keep Waystones visible, soften minimap waypoint markers, and enable blended
+They keep Waystones visible, set minimap waypoint opacity to 65%, and enable blended
 biome colors and the hovered-biome label on the world map. Xaero copies these
 profiles into its config directory on first launch; existing local profiles are
 left untouched.
