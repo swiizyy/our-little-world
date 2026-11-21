@@ -335,6 +335,11 @@ hash = "9aff010771d11ec9fe4980ff0d746cbca61854fc638daeef73c057f4fafb39bf"
 metafile = true
 
 [[files]]
+file = "mods/server_waypoint.pw.toml"
+hash = "2f641877fef9bf215f0c3cc689a3419bd4dd58d4db1388a8f90abbf9a9b4bf67"
+metafile = true
+
+[[files]]
 file = "mods/shogi.pw.toml"
 hash = "7dce4255d013864163503866db2a902f7071d64ef184c3d40189c1ac9641a7f2"
 metafile = true
