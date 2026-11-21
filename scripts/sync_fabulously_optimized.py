@@ -176,14 +176,21 @@ def sync():
         updates = {}
         removals = set()
         for project in changes:
-            new_path = staged[project][0]
+            new_path, metadata = staged[project]
             destination = ROOT / "mods" / new_path.name
             old_path = original[project][0] if project in original else None
             if destination.exists() and destination != old_path:
                 raise ValueError(f"Refusing to overwrite existing file: {destination}")
             if destination in updates:
                 raise ValueError(f"Multiple projects would write to {destination}")
-            updates[destination] = new_path.read_bytes()
+            data = new_path.read_bytes()
+            if old_path and original[project][1].get("side") != metadata.get("side"):
+                side = original[project][1].get("side")
+                if side in {"client", "server", "both"}:
+                    data, count = re.subn(rb'(?m)^side = "[^"]+"', f'side = "{side}"'.encode(), data)
+                    if count != 1:
+                        raise ValueError(f"Cannot preserve the configured side for {new_path.name}")
+            updates[destination] = data
             if old_path and old_path != destination:
                 removals.add(old_path)
         touched = set(updates) | removals | {ROOT / "pack.toml", ROOT / "index.toml"}

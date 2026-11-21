@@ -46,6 +46,11 @@ join through **Multiplayer → Direct Connection** with that address.
 Proximity voice chat works through e4mc too, without separate UDP port setup.
 Press **V** in game to choose and test your microphone.
 
+For the Windows launch hook, dedicated Fabric server, and migration steps,
+see the [installation guide](https://github.com/swiizyy/our-little-world/blob/dev/docs/operations.md).
+Pour le hook Windows, le serveur Fabric dédié et la migration, consultez
+le [guide en français](https://github.com/swiizyy/our-little-world/blob/dev/docs/operations.fr.md).
+
 ## 🎮 Gameplay
 
 - **Minecraft:** Java Edition 26.3

@@ -68,7 +68,7 @@ jour.
 
 ## Crédits
 
-La liste complète des créateurs et licences déclarées des **74 mods**, packs de
+La liste complète des créateurs et licences déclarées des **75 mods**, packs de
 ressources et des shaders inclus est dans [CREDITS.txt](CREDITS.txt). Elle est
 aussi accessible depuis l'écran titre en jeu. Les licences personnalisées ou
 « Tous droits réservés » sont indiquées pour consulter les conditions de chaque
@@ -82,3 +82,6 @@ projet.
 
 Consultez le [guide de contribution](CONTRIBUTING.md) pour Packwiz, la
 synchronisation des mods et les instructions de publication (en anglais).
+
+Pour un serveur dédié et des mises à jour avec votre launcher Minecraft Java
+compatible Fabric, suivez le [guide d'installation et Docker](docs/operations.fr.md).

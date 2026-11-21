@@ -25,9 +25,9 @@ jobs:
           python-version: "3.12"
       - uses: actions/setup-go@v5
         with:
-          go-version: stable
+          go-version: "1.25"
       - name: Install Packwiz
-        run: go install github.com/packwiz/packwiz@latest
+        run: go install github.com/packwiz/packwiz@v0.0.0-20261014010756-170b22d78595
       - name: Synchronize upstream mods
         run: |
           PATH="$(go env GOPATH)/bin:$PATH" python3 scripts/sync_fabulously_optimized.py
@@ -37,6 +37,7 @@ jobs:
           BEFORE="$(sha256sum pack.toml index.toml)"
           "$(go env GOPATH)/bin/packwiz" refresh
           test "$BEFORE" = "$(sha256sum pack.toml index.toml)"
+          PATH="$(go env GOPATH)/bin:$PATH" python3 scripts/build_pack.py --base HEAD
       - name: Open or update pull request
         uses: peter-evans/create-pull-request@v8
         with:

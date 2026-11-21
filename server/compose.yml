@@ -1,0 +1,38 @@
+name: our-little-world
+
+services:
+  minecraft:
+    image: itzg/minecraft-server:2026.11.0
+    environment:
+      EULA: ${EULA:?accept the Minecraft EULA in .env}
+      TYPE: FABRIC
+      VERSION: ${MINECRAFT_VERSION:-26.3}
+      FABRIC_LOADER_VERSION: ${FABRIC_LOADER_VERSION:-0.20.1}
+      PACKWIZ_URL: ${PACKWIZ_URL:?set an immutable Packwiz URL}
+      MEMORY: 12G
+      MOTD: Our Little World
+      MODE: survival
+      MAX_PLAYERS: "2"
+      LEVEL: ${LEVEL:-world}
+      ONLINE_MODE: "TRUE"
+      ENABLE_WHITELIST: "TRUE"
+      ENFORCE_WHITELIST: "TRUE"
+      WHITELIST: ${WHITELIST:-}
+      ENABLE_RCON: "TRUE"
+      RCON_PASSWORD: ${RCON_PASSWORD:?choose a local RCON password in .env}
+      STOP_DURATION: "120"
+    ports:
+      - "${BIND_ADDRESS:-0.0.0.0}:25565:25565/tcp"
+      - "${BIND_ADDRESS:-0.0.0.0}:24454:24454/udp"
+    volumes:
+      - type: bind
+        source: ${DATA_DIRECTORY:-./data}
+        target: /data
+    healthcheck:
+      test: ["CMD", "mc-health"]
+      start_period: 3m
+      interval: 15s
+      timeout: 5s
+      retries: 5
+    stop_grace_period: 150s
+    restart: unless-stopped

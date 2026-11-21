@@ -1,9 +1,9 @@
 # Contributing to Our Little World
 
-The pack is maintained with [Packwiz](https://packwiz.infra.link/). Development
-happens on `dev`, with changes reviewed into `main`. Install the
-[Packwiz CLI](https://packwiz.infra.link/installation/), then run commands from
-the repository root:
+The pack is maintained with [Packwiz](https://packwiz.infra.link/). Open
+changes against `dev` for review. Install the
+[Packwiz CLI](https://packwiz.infra.link/installation/), then run these
+commands from the repository root.
 
 ```sh
 # Add a mod from Modrinth
@@ -12,8 +12,11 @@ packwiz modrinth install <mod>
 # Refresh the index after manually changing pack files
 packwiz refresh
 
-# Export a Modrinth modpack
-packwiz modrinth export
+# Verify the index locally (Python 3.12+)
+python scripts/validate_pack.py
+
+# Validate downloads and export release artifacts into dist/
+python scripts/build_pack.py
 ```
 
 Commit the updated `pack.toml` and `index.toml` alongside pack changes. GitHub
@@ -112,24 +115,55 @@ created with `GITHUB_TOKEN` do not automatically trigger other workflows, so
 run any additional required validation separately before merging. GitHub may
 delay scheduled runs or disable them after prolonged repository inactivity.
 
-## 🚀 Releasing
+## Editing the pack
 
-From **Actions → Release modpack → Run workflow**, select a branch and the
-`stable`, `beta`, or `alpha` channel (default: `beta`). The workflow generates
-a unique version and creates a GitHub Release containing the `.mrpack`.
-Release notes are generated from commit subjects since the previous reachable
-tag and used for both the GitHub Release and the Modrinth version changelog.
+- Add a reviewed mod with `packwiz modrinth install <mod>`. For selected
+  updates use `packwiz update <mod>`, then review the exact version, hashes,
+  side and dependencies. To remove a mod, remove its metadata and review
+  any libraries that other mods may still need.
+- Run `packwiz refresh` and `python scripts/build_pack.py` before opening a PR
+  to `dev`. Commit the refreshed index and pack descriptor with the metadata
+  change. On Windows, replace `python` with `py -3.12` if appropriate. If an
+  existing Windows checkout reports only hash changes after refresh, normalize
+  the indexed files to LF as specified in `.gitattributes` before continuing.
+- Keep client-only defaults under `config/` and `defaultconfigs/`. The build
+  adds tracked defaults to the Modrinth client overrides and the Windows seed
+  archive. The Windows script preserves existing files. Server configs remain
+  local in `server/data/`. Discuss a destination and migration policy before
+  introducing a file that needs to be enforced on both sides.
 
-Alternatively:
+## Releasing
 
-- Push a semantic-version tag such as `v0.1.0` or `v0.2.0-beta.1` to create a
-  GitHub Release. Tags with an `-alpha...` suffix use the alpha channel; other
-  prereleases use beta; tags without a prerelease suffix use the release channel.
-- Push to the `stable`, `beta`, or `alpha` branch to produce a uniquely
-  versioned build as a downloadable GitHub Actions artifact.
+1. Set `version` in `pack.toml` before merging the release candidate. Use a
+   plain version for stable releases, or a suffix such as `-beta.1` /
+   `-alpha.1` for previews. Run the same checks as the PR workflow.
+2. Tag the reviewed commit with the exact version prefixed by `v`. For
+   example, once `pack.toml` says `0.1.0`, run `git tag v0.1.0` and
+   `git push origin v0.1.0`. Keep published tags on their original commits.
+3. GitHub Actions produces the `.mrpack`, client defaults, manifest and
+   changelog. The manifest and release notes link to the Packwiz file for
+   that exact commit. Preview tags create prereleases. Branch and PR builds
+   appear in the validation artifacts. Stable deployment follows stable tags.
+4. Update the server and both PCs using the
+   [operations guide](docs/operations.md) or [guide français](docs/operations.fr.md).
 
-To publish to Modrinth, configure the `MODRINTH_TOKEN` repository secret and
-the `MODRINTH_PROJECT_ID` repository variable. Without both, the GitHub Release
-or Actions artifact is still created. The [Modrinth description](MODRINTH.md)
-is ready to copy to the project page; upload [the icon](assets/icon.png)
-separately in Modrinth's project settings.
+GitHub Releases uses the workflow's built-in token. GitHub hosts the release
+assets, and Modrinth App can use the local archive or the Packwiz launch hook.
+Server credentials stay on the Mac. [MODRINTH.md](MODRINTH.md) contains the
+player-facing description.
+
+## Publier et contribuer en français
+
+Pour ajouter un mod, utilisez `packwiz modrinth install <mod>`. Pour actualiser
+un seul mod, utilisez `packwiz update <mod>` et vérifiez la version, les
+dépendances et le côté. Pour en retirer un, supprimez son fichier `.pw.toml`
+et vérifiez les dépendances des autres mods. Exécutez `packwiz refresh`, puis
+`python scripts/build_pack.py`. Incluez le nouvel index dans la PR vers `dev`.
+
+Pour publier, modifiez la version dans `pack.toml`, faites valider le commit,
+puis poussez le tag correspondant avec le préfixe `v` (par exemple `v0.1.0`).
+Les suffixes `-alpha.1` et `-beta.1` produisent des préversions. Les builds de
+branche restent des artefacts de CI. La release stable fournit le manifeste et
+les fichiers utilisés dans le [guide de déploiement](docs/operations.fr.md).
+GitHub héberge les fichiers de release. Téléchargez le `.mrpack` pour
+l'importer dans Modrinth App ou installez le pack avec le hook Packwiz.

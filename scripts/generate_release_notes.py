@@ -10,7 +10,7 @@ def git_output(*args: str) -> str:
         ["git", *args],
         check=True,
         capture_output=True,
-        text=True,
+        encoding="utf-8",
     ).stdout.strip()
 
 
