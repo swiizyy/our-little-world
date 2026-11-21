@@ -25,8 +25,8 @@ where the adventure takes you.
 - 🌿 **Explore together:** navigate with Xaero's World Map, encounter wildlife
   with Naturalist, and revisit favorite places with Waystones.
 - 🌷 **Enjoy the atmosphere:** improve lighting, animations, and visuals with
-  Sildur's shaders, Iris, LambDynamicLights, Entity Model Features, and the
-  Simply Cozy - Halloween Update.
+  Sildur's shaders, Iris, Distant Horizons, LambDynamicLights, Entity Model
+  Features, and the Simply Cozy - Halloween Update.
 - ⚡ **Keep things smooth:** performance mods such as Sodium, Lithium, and
   FerriteCore help make room for more adventures.
 
@@ -55,6 +55,14 @@ from **Options → Video Settings → Shader Packs**:
   hardware requirements.
 - **Sildur's Vibrant High** for richer lighting, reflections, and effects on
   more powerful computers.
+
+### Distant Horizons
+
+Distant Horizons is configured for wide, 128-chunk LOD vistas with a balanced
+CPU budget. It uses OpenGL so it remains compatible with Iris. Its terrain is
+most seamless with shader packs that support Distant Horizons; if you see
+visual artifacts, first try playing without shaders, then lower the LOD radius
+in **Options → Distant Horizons**. Existing personal settings are preserved.
 
 ## 💞 Play together
 

@@ -25,8 +25,8 @@ rencontrez la faune et partez explorer à votre rythme.
 - 🌿 **Explorez ensemble :** repérez-vous avec Xaero's World Map, découvrez la
   faune avec Naturalist et retrouvez vos lieux préférés avec Waystones.
 - 🌷 **Profitez de l'ambiance :** améliorez l'éclairage, les animations et les
-  graphismes grâce notamment aux shaders de Sildur, Iris, LambDynamicLights,
-  Entity Model Features et Simply Cozy - Halloween Update.
+  graphismes grâce notamment aux shaders de Sildur, Iris, Distant Horizons,
+  LambDynamicLights, Entity Model Features et Simply Cozy - Halloween Update.
 - ⚡ **Jouez plus confortablement :** Sodium, Lithium et FerriteCore contribuent
   à améliorer les performances.
 
@@ -57,6 +57,15 @@ Choisissez-en un dans **Options → Paramètres vidéo → Shaders** :
   aux configurations modestes.
 - **Sildur's Vibrant High** pour des éclairages, reflets et effets plus riches
   sur les configurations puissantes.
+
+### Distant Horizons
+
+Distant Horizons est réglé pour offrir de grands panoramas en LOD sur 128
+chunks tout en préservant le processeur. Il utilise OpenGL pour rester
+compatible avec Iris. Le relief lointain est plus homogène avec des shaders
+compatibles avec Distant Horizons ; en cas d’artefacts, essayez d’abord sans
+shader, puis baissez le rayon LOD dans **Options → Distant Horizons**. Vos
+réglages personnels existants sont conservés.
 
 ## 💞 Jouer ensemble
 

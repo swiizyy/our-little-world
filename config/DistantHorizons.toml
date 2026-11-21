@@ -1,0 +1,29 @@
+# Client defaults for Distant Horizons 3.3.4 on Minecraft 26.3.
+#
+# This balanced profile keeps far landscapes detailed without consuming every
+# CPU core. Players can adjust it in the Distant Horizons menu; existing local
+# settings are never overwritten by the client sync script.
+_version = 5
+
+[client.advanced.graphics.experimental]
+# Iris requires OpenGL on Minecraft 26.1 and newer. Blaze3D can crash when
+# Iris shaders are active.
+renderingApi = "OPEN_GL"
+
+[client.advanced.graphics.quality]
+# A 128-chunk LOD radius makes vistas feel expansive while remaining practical
+# on the laptops this pack targets.
+lodChunkRenderDistanceRadius = 128
+horizontalQuality = "MEDIUM"
+maxHorizontalResolution = "TWO_BLOCKS"
+verticalQuality = "MEDIUM"
+transparency = "COMPLETE"
+lodBiomeBlending = 2
+ditherDhFade = true
+
+[common.multiThreading]
+# Leave headroom for Minecraft, Sodium, and C2ME instead of occupying every
+# available core during LOD construction.
+numberOfThreads = 4
+threadRunTimeRatio = "0.75"
+threadPriority = 5

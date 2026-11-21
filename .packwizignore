@@ -1,17 +1,22 @@
+# Packwiz only indexes the metadata, asset manifests, and the Default Options
+# template required by its direct client hook. Documentation, tooling, and
+# visual-only client defaults are packaged separately by scripts/build_pack.py.
+# Keeping them out of the index prevents direct server installs from receiving
+# client settings.
 .github/
-scripts/
-tests/
 assets/
+client/
+defaultconfigs/
+docs/
+scripts/
+server/
+tests/
+dist/
+CONTRIBUTING.md
 MODRINTH.md
 README.md
 README.fr.md
-CONTRIBUTING.md
-server/
-client/
-docs/
-dist/
-.gitignore
-.gitattributes
+config/DistantHorizons.toml
 config/inventoryhud.json
 config/isxander-main-menu-credits.json
 config/jade/
@@ -19,4 +24,3 @@ config/jei/
 config/lambdynlights.toml
 config/sodium-options.json
 config/zoomify.json
-defaultconfigs/

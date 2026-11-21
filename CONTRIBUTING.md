@@ -62,6 +62,11 @@ and Zoomify eases in over 180 ms and out over 220 ms. InventoryHUD+ uses a compa
 with a softened background that disappears when the inventory is empty. JEI's
 ingredient and bookmark lists are limited to six columns, leaving more room
 around the inventory.
+Distant Horizons starts at a 128-chunk LOD radius with four worker threads at
+75% runtime, leaving headroom for Minecraft and C2ME. It uses OpenGL because
+Iris requires it on Minecraft 26.1 and newer. Keep this configuration
+client-only and update its `_version` only when confirming a new Distant
+Horizons schema.
 These settings do not change survival balance or world generation. BetterGrassify
 already defaults to fancy grass and Lambda-style snow, so it needs no override.
 
