@@ -1,13 +1,13 @@
 name = "Simply Cozy - Halloween Update"
-filename = "B - Simply Cozy 1.9.55.jar"
+filename = "B - Simply Cozy 1.9.61.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/U52QG9PF/versions/PKknwHJN/B%20-%20Simply%20Cozy%201.9.55.jar"
+url = "https://cdn.modrinth.com/data/U52QG9PF/versions/Tl5LSNLU/B%20-%20Simply%20Cozy%201.9.61.jar"
 hash-format = "sha512"
-hash = "62d5aa0226f504488b51c749cc4b6d75b1244c7ec613edfe4d05c6fbf770f6d95988606307744cf430bb12790095df23539c2a8e64d1b8cac21448450aac3961"
+hash = "4e0bd6e0c762358e8d480962bfd9d6899fc34873c979e9bc56e51881d8dd88d1af28bb3dedefddbc0bd18860970e06f836900f8faefecb44e3655db27798728d"
 
 [update]
 [update.modrinth]
 mod-id = "U52QG9PF"
-version = "PKknwHJN"
+version = "Tl5LSNLU"
