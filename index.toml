@@ -2,11 +2,15 @@ hash-format = "sha256"
 
 [[files]]
 file = "CREDITS.txt"
-hash = "9d3cffa8c6fb8a7704c34e2bd0fb7ed06fe0c74854f5ef7deff0500ec216309c"
+hash = "98ca016bcd4f0fd91d76ff3707505167554750cb5bd969cd7e8cdd353e0cc0d2"
 
 [[files]]
 file = "LICENSE-Ore-Borders.txt"
 hash = "7bf11210dae3c397e40cf50bdc1db801d8e6198e521afbb2837e7c4b76a4283a"
+
+[[files]]
+file = "config/defaultoptions/options.txt"
+hash = "9187350bf420aa5593a1ece10297153c71fbf76d9d5cf98fc14a8e4009012a64"
 
 [[files]]
 file = "mods/animaticarefabricated.pw.toml"
@@ -76,6 +80,11 @@ metafile = true
 [[files]]
 file = "mods/debugify.pw.toml"
 hash = "987087289924e794b93b0532826e75ecf98b413d33e4289ffc5c088f28db5963"
+metafile = true
+
+[[files]]
+file = "mods/default-options.pw.toml"
+hash = "9b4975496b89994b91ecaec25b246a54703d3a73c9b64e6d1257f499e7368c89"
 metafile = true
 
 [[files]]

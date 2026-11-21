@@ -40,7 +40,7 @@ where the adventure takes you.
 3. Launch the new instance, create or join a world, and start exploring.
 
 Faithful 64x and its Ore Borders, Clear Glass, and Visual Waxed Copper Items
-add-ons are included but not enabled automatically. In **Options → Resource
+add-ons are enabled on fresh instances. In **Options → Resource
 Packs**, select the ones you like and place the add-ons above Faithful.
 
 Two optional shader packs work with the included Iris installation. Select one
@@ -64,7 +64,7 @@ and has restarted the game after updating.
 
 ## Credits
 
-See [CREDITS.txt](CREDITS.txt) for creators and declared licenses for all 75
+See [CREDITS.txt](CREDITS.txt) for creators and declared licenses for all 76
 mods, resource packs, and the included shader packs. The same list is linked
 from the in-game title screen. Custom and All Rights Reserved licenses are
 identified so players can consult each project's terms.

@@ -4,6 +4,7 @@ import json
 from pathlib import Path
 import sys
 import tempfile
+import tomllib
 import unittest
 from unittest.mock import patch
 
@@ -11,7 +12,7 @@ from unittest.mock import patch
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from build_pack import release_channel
-from validate_pack import check_dependencies, check_fabric_sides, load_pack
+from validate_pack import RESOURCE_PACK_DEFAULTS, check_dependencies, check_fabric_sides, load_pack
 
 spec = importlib.util.spec_from_file_location("deploy", ROOT / "server/deploy.py")
 deploy = importlib.util.module_from_spec(spec)
@@ -24,6 +25,20 @@ class DistributionTests(unittest.TestCase):
         self.assertEqual(pack["versions"]["fabric"], "0.20.1")
         self.assertEqual(items["mods/zoomify.pw.toml"]["side"], "client")
         self.assertTrue(all(not name.startswith("config/") for name in items))
+
+    def test_resource_packs_are_seeded_in_priority_order(self):
+        _, items = load_pack(ROOT)
+        self.assertEqual(items["mods/default-options.pw.toml"]["side"], "client")
+        index = tomllib.loads((ROOT / "index.toml").read_text(encoding="utf-8"))
+        self.assertIn(RESOURCE_PACK_DEFAULTS, [entry["file"] for entry in index["files"]])
+        options = dict(line.split(":", 1) for line in
+                       (ROOT / RESOURCE_PACK_DEFAULTS).read_text(encoding="utf-8").splitlines())
+        self.assertEqual(set(options), {"version", "resourcePacks"})
+        expected = ["vanilla", "fabric"]
+        for pack in ("faithful-64x", "ore-borders-64x", "faithful-64x-clear-glass",
+                     "visual-waxed-copper-items-64x"):
+            expected.append(f"file/{items[f'resourcepacks/{pack}.pw.toml']['filename']}")
+        self.assertEqual(json.loads(options["resourcePacks"]), expected)
 
     def test_release_requires_the_exact_committed_version(self):
         self.assertEqual(release_channel("v1.2.3", "1.2.3"), "release")

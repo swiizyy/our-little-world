@@ -21,8 +21,12 @@ java -jar packwiz-installer-bootstrap.jar https://raw.githubusercontent.com/swii
 Utilisez Java 25 et un dossier dédié, vide de mods pour la première installation
 si Packwiz ne le suit pas encore. La branche stable avance après publication.
 Mettez le serveur à jour avant de lancer les deux instances. Pour copier aussi
-les réglages initiaux sans remplacer vos fichiers, utilisez la méthode
+les autres réglages initiaux sans remplacer vos fichiers, utilisez la méthode
 PowerShell ci-dessous.
+
+Sur une instance sans `options.txt`, Default Options active Faithful et ses
+addons dans le bon ordre. Dans une instance existante, vous gardez votre
+sélection et pouvez l'ajuster dans **Options → Packs de ressources**.
 
 Pour une installation ponctuelle, téléchargez `our-little-world.mrpack` depuis
 les [releases GitHub](https://github.com/swiizyy/our-little-world/releases).

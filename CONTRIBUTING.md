@@ -128,7 +128,10 @@ delay scheduled runs or disable them after prolonged repository inactivity.
   the indexed files to LF as specified in `.gitattributes` before continuing.
 - Keep client-only defaults under `config/` and `defaultconfigs/`. The build
   adds tracked defaults to the Modrinth client overrides and the Windows seed
-  archive. The Windows script preserves existing files. Server configs remain
+  archive. The Windows script preserves existing files. The resource pack
+  template at `config/defaultoptions/options.txt` is also indexed for the
+  direct Java hook. Default Options reads it on the client when the player's
+  own `options.txt` is absent. Server configs remain
   local in `server/data/`. Discuss a destination and migration policy before
   introducing a file that needs to be enforced on both sides.
 

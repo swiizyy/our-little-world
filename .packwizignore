@@ -12,5 +12,11 @@ docs/
 dist/
 .gitignore
 .gitattributes
-config/
+config/inventoryhud.json
+config/isxander-main-menu-credits.json
+config/jade/
+config/jei/
+config/lambdynlights.toml
+config/sodium-options.json
+config/zoomify.json
 defaultconfigs/

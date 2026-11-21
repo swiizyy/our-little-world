@@ -23,7 +23,10 @@ java -jar packwiz-installer-bootstrap.jar https://raw.githubusercontent.com/swii
 Use Java 25 and a dedicated game directory with no existing mods on the
 first Packwiz install. The stable branch advances after publication. Update
 the server before launching both clients. Use the PowerShell method below
-if you also want to seed the pack's client defaults.
+if you also want to seed the pack's other client defaults.
+
+On instances without an `options.txt`, Default Options enables Faithful and
+its add-ons in order. Existing instances keep their resource pack selection.
 
 **One-time import.** Download `our-little-world.mrpack` from the desired
 [GitHub release](https://github.com/swiizyy/our-little-world/releases) and

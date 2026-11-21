@@ -11,7 +11,7 @@ from urllib.parse import unquote
 import zipfile
 
 from generate_release_notes import git_output, generate_release_notes
-from validate_pack import load_pack, applicable, safe_path
+from validate_pack import RESOURCE_PACK_DEFAULTS, load_pack, applicable, safe_path
 
 
 VERSION_TAG = re.compile(r"v(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)(?:-((?:alpha|beta)(?:\.[0-9A-Za-z-]+)*))?")
@@ -39,7 +39,7 @@ def export_pack(root, output, pack, items):
                 raise ValueError("Packwiz produced a corrupt archive")
             members = set(source.namelist())
             allowed = {"modrinth.index.json", "overrides/", "overrides/CREDITS.txt",
-                       "overrides/LICENSE-Ore-Borders.txt"}
+                       "overrides/LICENSE-Ore-Borders.txt", f"overrides/{RESOURCE_PACK_DEFAULTS}"}
             if members - allowed:
                 raise ValueError(f"Unexpected bundled files: {sorted(members - allowed)}")
             index = json.loads(source.read("modrinth.index.json"))
@@ -67,7 +67,8 @@ def export_pack(root, output, pack, items):
             with (zipfile.ZipFile(output / "our-little-world.mrpack", "w", zipfile.ZIP_DEFLATED) as archive,
                   zipfile.ZipFile(output / "client-defaults.zip", "w", zipfile.ZIP_DEFLATED) as client):
                 for entry in source.infolist():
-                    archive.writestr(entry, source.read(entry))
+                    if entry.filename != f"overrides/{RESOURCE_PACK_DEFAULTS}":
+                        archive.writestr(entry, source.read(entry))
                 for name in filter(None, defaults):
                     file = root / safe_path(name)
                     contents = file.read_bytes().replace(b"\r\n", b"\n")

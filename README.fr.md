@@ -41,7 +41,7 @@ rencontrez la faune et partez explorer à votre rythme.
 3. Lancez l'instance, créez un monde ou rejoignez-en un, puis partez explorer.
 
 Faithful 64x et ses extensions Ore Borders, Clear Glass et Visual Waxed Copper
-Items sont inclus mais ne sont pas activés automatiquement. Dans **Options →
+Items sont activés sur les nouvelles instances. Dans **Options →
 Packs de ressources**, sélectionnez ceux qui vous plaisent et placez les
 extensions au-dessus de Faithful.
 
@@ -68,7 +68,7 @@ jour.
 
 ## Crédits
 
-La liste complète des créateurs et licences déclarées des **75 mods**, packs de
+La liste complète des créateurs et licences déclarées des **76 mods**, packs de
 ressources et des shaders inclus est dans [CREDITS.txt](CREDITS.txt). Elle est
 aussi accessible depuis l'écran titre en jeu. Les licences personnalisées ou
 « Tous droits réservés » sont indiquées pour consulter les conditions de chaque
