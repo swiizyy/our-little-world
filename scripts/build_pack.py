@@ -39,7 +39,7 @@ def export_pack(root, output, pack, items):
                 raise ValueError("Packwiz produced a corrupt archive")
             members = set(source.namelist())
             allowed = {"modrinth.index.json", "overrides/", "overrides/CREDITS.txt",
-                       "overrides/LICENSE-Ore-Borders.txt", f"overrides/{RESOURCE_PACK_DEFAULTS}"}
+                       f"overrides/{RESOURCE_PACK_DEFAULTS}"}
             if members - allowed:
                 raise ValueError(f"Unexpected bundled files: {sorted(members - allowed)}")
             index = json.loads(source.read("modrinth.index.json"))

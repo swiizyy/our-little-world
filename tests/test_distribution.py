@@ -35,8 +35,7 @@ class DistributionTests(unittest.TestCase):
                        (ROOT / RESOURCE_PACK_DEFAULTS).read_text(encoding="utf-8").splitlines())
         self.assertEqual(set(options), {"version", "resourcePacks"})
         expected = ["vanilla", "fabric"]
-        for pack in ("faithful-64x", "ore-borders-64x", "faithful-64x-clear-glass",
-                     "visual-waxed-copper-items-64x"):
+        for pack in ("faithful-64x", "faithful-64x-static-sea-lanterns"):
             expected.append(f"file/{items[f'resourcepacks/{pack}.pw.toml']['filename']}")
         self.assertEqual(json.loads(options["resourcePacks"]), expected)
 

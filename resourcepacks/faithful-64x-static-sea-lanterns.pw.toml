@@ -1,0 +1,8 @@
+name = "Faithful 64x - Static Sea Lanterns"
+filename = "StaticSeaLanterns_64x_26.3.zip"
+side = "client"
+
+[download]
+url = "https://github.com/Hedreon/Addons/releases/download/ssl-26.3/StaticSeaLanterns_64x_26.3.zip"
+hash-format = "sha256"
+hash = "6476a4260680a0f5896a1cc39178d9bfbf8f604a883fb6438ebf0189813f0acb"

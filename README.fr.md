@@ -40,10 +40,15 @@ rencontrez la faune et partez explorer à votre rythme.
    [Prism Launcher](https://prismlauncher.org/).
 3. Lancez l'instance, créez un monde ou rejoignez-en un, puis partez explorer.
 
-Faithful 64x et ses extensions Ore Borders, Clear Glass et Visual Waxed Copper
-Items sont activés sur les nouvelles instances. Dans **Options →
+Faithful 64x et Static Sea Lanterns sont activés sur les nouvelles instances. Dans **Options →
 Packs de ressources**, sélectionnez ceux qui vous plaisent et placez les
 extensions au-dessus de Faithful.
+
+Blood Netherite 64x et Pink Netherite 64x sont téléchargés sans être activés
+par défaut. Choisis une seule variante et place-la au-dessus de Faithful.
+
+CTM Faithful reste désactivé par défaut. Sa compatibilité avec Minecraft 26.3
+n'est pas déclarée par l'auteur.
 
 Deux shaders facultatifs fonctionnent avec Iris, déjà présent dans le pack.
 Choisissez-en un dans **Options → Paramètres vidéo → Shaders** :

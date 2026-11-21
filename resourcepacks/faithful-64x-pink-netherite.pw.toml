@@ -1,0 +1,8 @@
+name = "Pink Netherite 64x"
+filename = "Pink Netherite 64x.zip"
+side = "client"
+
+[download]
+url = "https://raw.githubusercontent.com/Jamiscus/pink-netherite-64x/6a1380045c7fe0be8b3ef2368ba381ca5617220d/Pink%20Netherite%2064x.zip"
+hash-format = "sha256"
+hash = "b5d1c180721160b6e669513710c4dbe39fc357f55e8f653909cd4e034ca6edf6"

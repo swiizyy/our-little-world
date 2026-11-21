@@ -39,9 +39,14 @@ where the adventure takes you.
    [Prism Launcher](https://prismlauncher.org/).
 3. Launch the new instance, create or join a world, and start exploring.
 
-Faithful 64x and its Ore Borders, Clear Glass, and Visual Waxed Copper Items
-add-ons are enabled on fresh instances. In **Options → Resource
+Faithful 64x and Static Sea Lanterns are enabled on fresh instances. In **Options → Resource
 Packs**, select the ones you like and place the add-ons above Faithful.
+
+Blood Netherite 64x and Pink Netherite 64x are downloaded without being
+enabled by default. Choose one variant and place it above Faithful.
+
+CTM Faithful is disabled by default. The author has not declared support for
+Minecraft 26.3.
 
 Two optional shader packs work with the included Iris installation. Select one
 from **Options → Video Settings → Shader Packs**:

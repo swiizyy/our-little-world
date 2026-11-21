@@ -1,0 +1,9 @@
+name = "CTM Faithful"
+filename = "CTM Faithful 0.4.1+1.20.x-1.21.x.zip"
+side = "client"
+
+# Pinned to the official file. The author has not declared Minecraft 26.3 support.
+[download]
+url = "https://cdn.modrinth.com/data/qtbeFoLR/versions/bRrKkbns/CTM%20Faithful%200.4.1%2B1.20.x-1.21.x.zip"
+hash-format = "sha512"
+hash = "f804f039948d6b157396bc4c51fde92f6963a388b420c74631aac9e4f775c8c23861b8437a73ef932f7d3b8ec91ce06cd8720b6a1c6bb4e1cf8ed233be04190a"

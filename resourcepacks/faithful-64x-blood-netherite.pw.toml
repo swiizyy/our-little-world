@@ -1,0 +1,8 @@
+name = "Blood Netherite 64x"
+filename = "Blood Netherite 64x.zip"
+side = "client"
+
+[download]
+url = "https://raw.githubusercontent.com/Jamiscus/pink-netherite-64x/6a1380045c7fe0be8b3ef2368ba381ca5617220d/Blood%20Netherite%2064x.zip"
+hash-format = "sha256"
+hash = "9f47beca5d1ab970aef59f226c98b2237d2579cad540c2fa790b57ab45fb1070"

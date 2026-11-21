@@ -2,5 +2,4 @@ pack.toml text eol=lf
 index.toml text eol=lf
 *.pw.toml text eol=lf
 CREDITS.txt text eol=lf
-LICENSE-Ore-Borders.txt text eol=lf
 config/defaultoptions/options.txt text eol=lf

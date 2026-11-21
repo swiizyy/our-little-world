@@ -2,15 +2,11 @@ hash-format = "sha256"
 
 [[files]]
 file = "CREDITS.txt"
-hash = "98ca016bcd4f0fd91d76ff3707505167554750cb5bd969cd7e8cdd353e0cc0d2"
-
-[[files]]
-file = "LICENSE-Ore-Borders.txt"
-hash = "7bf11210dae3c397e40cf50bdc1db801d8e6198e521afbb2837e7c4b76a4283a"
+hash = "8da15f35c8e4db803b2b5478d1d973473456857f7d52bdb8ac71a520d7c4ac51"
 
 [[files]]
 file = "config/defaultoptions/options.txt"
-hash = "9187350bf420aa5593a1ece10297153c71fbf76d9d5cf98fc14a8e4009012a64"
+hash = "66aa542c0d7b4585f2caab75624d73b8c92cf13ef3b234eb98d3ad3d8596d0fc"
 
 [[files]]
 file = "mods/animaticarefabricated.pw.toml"
@@ -393,23 +389,28 @@ hash = "7ac50a41949c05df550b62d54051bc171491644eef010aa19bd8abe3419909b1"
 metafile = true
 
 [[files]]
-file = "resourcepacks/faithful-64x-clear-glass.pw.toml"
-hash = "d377902a1437b64302c98ba08bf7edf345a8fc84fb901c618c2f4e70aec5f36c"
+file = "resourcepacks/ctm-faithful.pw.toml"
+hash = "9094cc42dbf177238d55d27c02e3b8e1535dae01fa2aa15ca7b35282e8e6dac5"
+metafile = true
+
+[[files]]
+file = "resourcepacks/faithful-64x-blood-netherite.pw.toml"
+hash = "69a0afb651433141d4417ab4a746588860aac374a40342f8f153f0ecffa78e2f"
+metafile = true
+
+[[files]]
+file = "resourcepacks/faithful-64x-pink-netherite.pw.toml"
+hash = "9cec9def04ce0e49f29a3a8a9b12f3e8c721505d449854a55c9de2a454804097"
+metafile = true
+
+[[files]]
+file = "resourcepacks/faithful-64x-static-sea-lanterns.pw.toml"
+hash = "8a920fda0adc53078dce3685415e8e64142803f8b97f9d2320e64c4e165f16eb"
 metafile = true
 
 [[files]]
 file = "resourcepacks/faithful-64x.pw.toml"
 hash = "846e718a3449c45ea1c554b67d8da717a11f1978345bcab857266657a13c5a4e"
-metafile = true
-
-[[files]]
-file = "resourcepacks/ore-borders-64x.pw.toml"
-hash = "fa3167c9789b56fff102f85c93b727192bf623d21d402b12562e2821f33cdbc8"
-metafile = true
-
-[[files]]
-file = "resourcepacks/visual-waxed-copper-items-64x.pw.toml"
-hash = "4b8ebf6145e275eadfd58cefe9f94aad5e5b806781f423caeeb387f8f75c75aa"
 metafile = true
 
 [[files]]

@@ -64,7 +64,7 @@ def load_pack(root):
         indexed.add(name.casefold())
         file = root / path
         check_hash(file.read_bytes(), entry.get("hash-format", contents["hash-format"]), entry["hash"], name)
-        if name in ("CREDITS.txt", "LICENSE-Ore-Borders.txt", RESOURCE_PACK_DEFAULTS) and not entry.get("metafile"):
+        if name in ("CREDITS.txt", RESOURCE_PACK_DEFAULTS) and not entry.get("metafile"):
             continue
         if path.parts[0] not in DIRECTORIES or len(path.parts) != 2 or not entry.get("metafile") or not name.endswith(".pw.toml"):
             raise ValueError(f"{name}: expected a sided Packwiz metafile in {DIRECTORIES}")
