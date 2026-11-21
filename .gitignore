@@ -1,0 +1,8 @@
+__pycache__/
+dist/
+/server/.env
+/server/data/
+/server/backups/
+/server/.deploy-lock/
+/server/.pack.env
+/server/.pack.env.next

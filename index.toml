@@ -2,47 +2,11 @@ hash-format = "sha256"
 
 [[files]]
 file = "CREDITS.txt"
-hash = "d4a82b5d07fbec7e14bfff91cdb12d02284183cf7078b9042f11527818bc0b7f"
+hash = "9d3cffa8c6fb8a7704c34e2bd0fb7ed06fe0c74854f5ef7deff0500ec216309c"
 
 [[files]]
 file = "LICENSE-Ore-Borders.txt"
 hash = "7bf11210dae3c397e40cf50bdc1db801d8e6198e521afbb2837e7c4b76a4283a"
-
-[[files]]
-file = "config/inventoryhud.json"
-hash = "dee97346a2d97cc57bd21a73fe0083dc3744596c0962d1ba69a115640af46b7d"
-
-[[files]]
-file = "config/isxander-main-menu-credits.json"
-hash = "ce0f5e0ae4a42a543de5fe5dafc29be153d0251d6785b85bdcfb8c8c027676f9"
-
-[[files]]
-file = "config/jade/jade.json"
-hash = "9e372bedaada1b28274da8215cdf57081634b0cfefc34299bb6233546506863c"
-
-[[files]]
-file = "config/jei/client/default/jei-client.ini"
-hash = "29e7125b70ca88c22d779418f58b9acde705d6dbcd3120b7534ded17b3d87625"
-
-[[files]]
-file = "config/lambdynlights.toml"
-hash = "cd47e5cf593236109b8d49eb4ddd9095bb3409703dfa707201132af03eedcc8d"
-
-[[files]]
-file = "config/sodium-options.json"
-hash = "110fe9d2295c52549c7282ec386a3c161fe427411c620b8aa810700f7493d8ae"
-
-[[files]]
-file = "config/zoomify.json"
-hash = "8a31a0b4d93c6ad5ca3fafc3f7179c475794f10506fde2b0774a68d79735f426"
-
-[[files]]
-file = "defaultconfigs/xaero/minimap/profiles/default.cfg"
-hash = "72d4cd84b56bd1a6fa0646d0a8b2efc14836f3bfa87384fd87eeb0edd79f3458"
-
-[[files]]
-file = "defaultconfigs/xaero/world-map/profiles/default.cfg"
-hash = "ac81fe9074b7bc421f581062ba51c380ad9f065574932931f9a71e0f7d2ec481"
 
 [[files]]
 file = "mods/animaticarefabricated.pw.toml"
@@ -56,7 +20,7 @@ metafile = true
 
 [[files]]
 file = "mods/better-block-entities.pw.toml"
-hash = "5e7a8a550f9e143b502c46aaeb13c02ea4ab60195cf0afe4a3480730a6815ee7"
+hash = "97ffadc9852dc08c2d2b3c26d9bd8befb42e4e92a02ad8c171f7b960c7eb9b4f"
 metafile = true
 
 [[files]]
@@ -286,7 +250,7 @@ metafile = true
 
 [[files]]
 file = "mods/moreculling.pw.toml"
-hash = "b02c935ed3d808fb6bc3a89acb8ebe261ed175b86b2542d88d8b2c19240fc2f8"
+hash = "a0fefd25252e1dfac7da103d64436b9d7579b5cf404fd664139c4db079f40897"
 metafile = true
 
 [[files]]
@@ -321,7 +285,7 @@ metafile = true
 
 [[files]]
 file = "mods/reeses-sodium-options.pw.toml"
-hash = "a37efb8198755739044800baa74f63b91cae2428f33e8e368e35f3c829c83947"
+hash = "7ddded1570a6ed9ec5b9f0fa1dbce5e29896c4f00f9fa56efe09b7716bb6bf3d"
 metafile = true
 
 [[files]]
@@ -361,7 +325,7 @@ metafile = true
 
 [[files]]
 file = "mods/sodium-extra.pw.toml"
-hash = "ad4ccf1c82ade67bbb45d98131e7a34c9ce97fb5a37a9a9d0eb6afbe373df3b2"
+hash = "0c4b6d09c057e17756244ecf46604684d97f5e0a2c53deb85f99d333b537a3a6"
 metafile = true
 
 [[files]]
@@ -371,7 +335,7 @@ metafile = true
 
 [[files]]
 file = "mods/sodium.pw.toml"
-hash = "d1818a0dd36e725449fbc8ec9e48b4a276d6c3a6e5761ec9646f53cae3504c62"
+hash = "54d699d9ba85bb08b9fd3696a11c7449ea1175a118805855143e1c88fa54aa6b"
 metafile = true
 
 [[files]]
@@ -416,7 +380,7 @@ metafile = true
 
 [[files]]
 file = "mods/zoomify.pw.toml"
-hash = "15bec6a102b4dcf9470ba80b3ce9992fb9e67d2c19b17773e23ad98c15618ec2"
+hash = "7ac50a41949c05df550b62d54051bc171491644eef010aa19bd8abe3419909b1"
 metafile = true
 
 [[files]]

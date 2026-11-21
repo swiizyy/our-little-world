@@ -64,7 +64,7 @@ and has restarted the game after updating.
 
 ## Credits
 
-See [CREDITS.txt](CREDITS.txt) for creators and declared licenses for all 74
+See [CREDITS.txt](CREDITS.txt) for creators and declared licenses for all 75
 mods, resource packs, and the included shader packs. The same list is linked
 from the in-game title screen. Custom and All Rights Reserved licenses are
 identified so players can consult each project's terms.
@@ -77,3 +77,6 @@ identified so players can consult each project's terms.
 
 See the [contributor guide](CONTRIBUTING.md) for Packwiz, mod synchronization,
 and release instructions.
+
+For a dedicated server and updates with any Fabric-compatible Minecraft Java
+launcher, follow the [installation and Docker guide](docs/operations.md).

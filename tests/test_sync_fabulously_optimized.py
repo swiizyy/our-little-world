@@ -17,9 +17,9 @@ sync = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(sync)
 
 
-def mod(project, version, checksum):
+def mod(project, version, checksum, side="both"):
     return (
-        f'name = "{project}"\nfilename = "{project}.jar"\n'
+        f'name = "{project}"\nfilename = "{project}.jar"\nside = "{side}"\n'
         f'[download]\nhash-format = "sha512"\nhash = "{checksum}"\n'
         f'[update.modrinth]\nmod-id = "{project}"\nversion = "{version}"\n'
     )
@@ -93,7 +93,7 @@ class SyncTests(unittest.TestCase):
         (self.root / "mods").mkdir()
         (self.root / "pack.toml").write_text('[versions]\nminecraft = "26.3"\nfabric = "0.20"\n')
         (self.root / "index.toml").write_text('hash-format = "sha256"\n')
-        (self.root / "mods" / "upstream.pw.toml").write_text(mod("upstream", "v1", "old"))
+        (self.root / "mods" / "upstream.pw.toml").write_text(mod("upstream", "v1", "old", side="client"))
         (self.root / "mods" / "local.pw.toml").write_text(mod("local", "v1", "localhash"))
         self.wanted = {"upstream": ("v2", "new"), "added": ("v1", "addedhash")}
 
@@ -113,6 +113,7 @@ class SyncTests(unittest.TestCase):
         mods = sync.read_mods(self.root / "mods")
         self.assertEqual(set(mods), {"upstream", "added", "local"})
         self.assertEqual(mods["upstream"][1]["update"]["modrinth"]["version"], "v2")
+        self.assertEqual(mods["upstream"][1]["side"], "client")
         self.assertEqual(mods["local"][1]["update"]["modrinth"]["version"], "v1")
 
     def test_refresh_failure_restores_original_files(self):

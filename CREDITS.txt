@@ -1,7 +1,7 @@
 OUR LITTLE WORLD — CREDITS AND LICENSES
 
 This pack is maintained by the Our Little World contributors.
-The 74 mods below are identified by their official project pages.
+The 75 mods below are identified by their official project pages.
 Creators are the Modrinth team members listed for each project when available.
 License identifiers and custom terms are those declared by each project; check
 the project page for the current terms and notices. This list is informational
@@ -201,6 +201,10 @@ Sodium Extra — FlashyReese
 Sodium Shadowy Path Blocks (SSPB) — Rynnavinx
   Project: https://modrinth.com/mod/sodium-shadowy-path-blocks
   License: LGPL-3.0-only (https://spdx.org/licenses/LGPL-3.0-only.html)
+Server Waypoint — 2676959
+  Project: https://modrinth.com/mod/server_waypoint
+  License: MIT (https://github.com/2676959/server_waypoint/blob/1.21/LICENSE)
+
 Storage Drawers — Texelsaur
   Project: https://modrinth.com/mod/storagedrawers
   License: MIT (https://spdx.org/licenses/MIT.html)

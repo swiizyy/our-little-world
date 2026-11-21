@@ -2,7 +2,9 @@ name: Validate pack
 
 on:
   push:
+    branches: [dev, main, stable, beta, alpha]
   pull_request:
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -12,25 +14,60 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - uses: actions/setup-go@v5
         with:
-          go-version: stable
+          go-version: "1.25"
       - name: Install Packwiz
-        run: go install github.com/packwiz/packwiz@latest
-      - name: Validate Packwiz metadata
         run: |
-          "$(go env GOPATH)/bin/packwiz" refresh
+          go install github.com/packwiz/packwiz@v0.0.0-20261014010756-170b22d78595
+          echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
+      - name: Unit tests and index
+        run: |
+          python -m unittest discover -s tests -v
+          packwiz refresh
           git diff --exit-code -- pack.toml index.toml
-      - name: Validate Modrinth export
+      - name: Validate downloads and build Modrinth export
+        env:
+          PR_BASE: ${{ github.event.pull_request.base.sha }}
         run: |
-          "$(go env GOPATH)/bin/packwiz" modrinth export \
-            --output /tmp/our-little-world-validation.mrpack
-          python3 scripts/externalize_modrinth_file.py \
-            /tmp/our-little-world-validation.mrpack \
-            mods/unified-xaero-worldmap.pw.toml
-          unzip -t /tmp/our-little-world-validation.mrpack
-      - name: Test Fabulously Optimized synchronization
-        run: python3 -m unittest discover -s tests -v
+          set -o pipefail
+          mkdir -p dist
+          if [[ -n "$PR_BASE" ]]; then
+            python scripts/build_pack.py --base "$PR_BASE" 2>&1 | tee dist/validation.log
+          else
+            python scripts/build_pack.py 2>&1 | tee dist/validation.log
+          fi
+      - name: Validate Compose
+        env:
+          EULA: "TRUE"
+          PACKWIZ_URL: https://raw.githubusercontent.com/swiizyy/our-little-world/dev/pack.toml
+          RCON_PASSWORD: ci-placeholder
+        run: docker compose -f server/compose.yml config --quiet
+      - name: Upload validation report and build
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: packwiz-validation
+          path: dist/
+          if-no-files-found: ignore
+
+  client:
+    strategy:
+      matrix:
+        os: [windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m unittest discover -s tests -v
+      - run: python scripts/validate_pack.py
+      - name: Test client synchronization
+        shell: pwsh
+        run: ./tests/test-client.ps1
