@@ -9,7 +9,10 @@ import re
 import shutil
 import subprocess
 import tempfile
-import tomllib
+try:
+    import tomllib
+except ModuleNotFoundError:
+    import tomli as tomllib
 from urllib.request import urlopen
 
 

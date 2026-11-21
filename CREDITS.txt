@@ -1,7 +1,7 @@
 OUR LITTLE WORLD — CREDITS AND LICENSES
 
 This pack is maintained by the Our Little World contributors.
-The 76 mods below are identified by their official project pages.
+The 81 mods below are identified by their official project pages.
 Creators are the Modrinth team members listed for each project when available.
 License identifiers and custom terms are those declared by each project; check
 the project page for the current terms and notices. This list is informational
@@ -30,9 +30,15 @@ Better Mount HUD — Lortseam
 BetterGrassify — UltimatChamp, JayemCeekay
   Project: https://modrinth.com/mod/bettergrassify
   License: Apache-2.0 (https://spdx.org/licenses/Apache-2.0.html)
+C2ME — duplexsystem, ishland
+  Project: https://modrinth.com/mod/c2me-fabric
+  License: LGPL-3.0-only (https://spdx.org/licenses/LGPL-3.0-only.html)
 Cape Provider — litetex
   Project: https://modrinth.com/mod/cape-provider
   License: LGPL-2.1-or-later (https://spdx.org/licenses/LGPL-2.1-or-later.html)
+Chunky — pop4959
+  Project: https://modrinth.com/mod/chunky
+  License: GPL-3.0-only (https://spdx.org/licenses/GPL-3.0-only.html)
 Cloth Config API — shedaniel
   Project: https://modrinth.com/mod/cloth-config
   License: LGPL-3.0-only (https://spdx.org/licenses/LGPL-3.0-only.html)
@@ -60,7 +66,9 @@ Debugify — isxander
 Default Options — BlayTheNinth / Twelve Iterations
   Project: https://modrinth.com/mod/default-options
   License: All Rights Reserved (downloaded from the official project)
-
+Distant Horizons — Distant Horizons team
+  Project: https://modrinth.com/mod/distanthorizons
+  License: LGPL-3.0-only (https://spdx.org/licenses/LGPL-3.0-only.html)
 Dynamic FPS — LostLuma, juliand665
   Project: https://modrinth.com/mod/dynamic-fps
   License: MIT (https://spdx.org/licenses/MIT.html)
@@ -112,6 +120,9 @@ Jade — creator not listed in the Modrinth team
 Just Enough Items (JEI) — mezz
   Project: https://modrinth.com/mod/jei
   License: MIT (https://spdx.org/licenses/MIT.html)
+Krypton — creator not listed in the Modrinth team
+  Project: https://modrinth.com/mod/krypton
+  License: LGPL-3.0-only (https://spdx.org/licenses/LGPL-3.0-only.html)
 LambDynamicLights — creator not listed in the Modrinth team
   Project: https://modrinth.com/mod/lambdynamiclights
   License: custom (https://github.com/LambdAurora/LambDynamicLights/blob/1.21.5/LICENSE)
@@ -163,6 +174,9 @@ More Culling — 1Foxy2, FX
 Naturalist — crispytwig, mattdearga
   Project: https://modrinth.com/mod/naturalist
   License: custom (https://github.com/starfish-studios/Naturalist/blob/1.19/LICENSE)
+Nvidium — astei
+  Project: https://modrinth.com/mod/nvidium
+  License: LGPL-3.0-only (https://spdx.org/licenses/LGPL-3.0-only.html)
 Open Parties and Claims — thexaero
   Project: https://modrinth.com/mod/open-parties-and-claims
   License: LGPL-3.0-only (https://spdx.org/licenses/LGPL-3.0-only.html)

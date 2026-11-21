@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CREDITS.txt"
-hash = "8da15f35c8e4db803b2b5478d1d973473456857f7d52bdb8ac71a520d7c4ac51"
+hash = "b13c68f30e89dec4f44805455c69ad8779fe6ddd700cb0fe8199158dbf1fff1b"
 
 [[files]]
 file = "config/defaultoptions/options.txt"

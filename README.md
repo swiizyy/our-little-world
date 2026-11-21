@@ -69,7 +69,7 @@ and has restarted the game after updating.
 
 ## Credits
 
-See [CREDITS.txt](CREDITS.txt) for creators and declared licenses for all 76
+See [CREDITS.txt](CREDITS.txt) for creators and declared licenses for all 81
 mods, resource packs, and the included shader packs. The same list is linked
 from the in-game title screen. Custom and All Rights Reserved licenses are
 identified so players can consult each project's terms.

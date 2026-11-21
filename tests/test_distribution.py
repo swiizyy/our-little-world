@@ -4,7 +4,10 @@ import json
 from pathlib import Path
 import sys
 import tempfile
-import tomllib
+try:
+    import tomllib
+except ModuleNotFoundError:
+    import tomli as tomllib
 import unittest
 from unittest.mock import patch
 

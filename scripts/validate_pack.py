@@ -7,7 +7,10 @@ import io
 import json
 from pathlib import Path, PurePosixPath
 import re
-import tomllib
+try:
+    import tomllib
+except ModuleNotFoundError:
+    import tomli as tomllib
 from urllib.parse import urlencode, urlsplit
 from urllib.request import Request, urlopen
 import zipfile

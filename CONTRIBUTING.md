@@ -12,7 +12,8 @@ packwiz modrinth install <mod>
 # Refresh the index after manually changing pack files
 packwiz refresh
 
-# Verify the index locally (Python 3.12+)
+# Verify the index locally (Python 3.11+, or Python 3.9+ with dependencies)
+python -m pip install -r scripts/requirements.txt
 python scripts/validate_pack.py
 
 # Validate downloads and export release artifacts into dist/
