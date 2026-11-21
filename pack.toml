@@ -1,6 +1,6 @@
 name = "Our Little World"
 author = "Our Little World contributors"
-version = "0.1.2"
+version = "0.1.3"
 description = "A cozy Fabric adventure for building, exploring, farming, and sharing a world together."
 pack-format = "packwiz:1.1.0"
 
