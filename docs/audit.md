@@ -13,12 +13,14 @@ sur le serveur ou remplacer des réglages locaux. Windows pouvait aussi
 modifier les fins de ligne des fichiers indexés. Les réglages deviennent des
 valeurs initiales client, et Git conserve les octets LF du pack.
 
-The download audit checked the 81 locked hashes. The validation includes exact
-exceptions for discrepancies confirmed against the downloaded Fabric manifests.
+The download audit checked the 81 hashes locked in the audited snapshot. The
+table records the versions examined at that time. Validation exceptions apply
+only to the exact releases and dependency versions verified against the Fabric
+manifests.
 
 | Release | Modrinth declaration | Checked against the locked file |
 | --- | --- | --- |
-| Better Block Entities `wORq9rW6` | Requires Sodium version `aFVpk3tG` | Fabric accepts `>=0.9.3-beta.3`. The pack pins `v7Lw0h1m`, 0.9.3-beta.5. |
+| Better Block Entities `wORq9rW6` | Requires Sodium version `aFVpk3tG` | Fabric accepts `>=0.9.3-beta.3`. The audit checked `v7Lw0h1m`, 0.9.3-beta.5. |
 | Iris `vTN4NRGW` | Requires Sodium version `bAZQdGpg` | Fabric accepts `0.9.x`, including the locked Sodium. |
 | Config Manager `okecULrz` | Requires Mod Menu | The JAR does not require Mod Menu. The pack still includes Mod Menu on the client. |
 | Zoomify `RUBpNu00` | Requires project `1vrSzlao` (Kotlin Lang Forge) | The Fabric JAR requires YACL, which the pack provides. Modrinth marks Zoomify's server side unsupported. Packwiz now marks it as client-only. |
