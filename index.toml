@@ -34,8 +34,18 @@ hash = "57791283291466d626b526aef786019522401efa5cea784a85c22e998463463c"
 metafile = true
 
 [[files]]
+file = "mods/c2me-fabric.pw.toml"
+hash = "1e3df3c319ea1f964ffb4c69dd5691633c514dae9b2d8e1b5d56be206c923558"
+metafile = true
+
+[[files]]
 file = "mods/cape-provider.pw.toml"
 hash = "5c69e1dc7a534ea07abcfff526b5e2c4be3702e79132264934394330e950a7c1"
+metafile = true
+
+[[files]]
+file = "mods/chunky.pw.toml"
+hash = "b6e76b7a0d0355c542e5a6fca02e4ef452f6d9c0610da3b02f8554177e3bec31"
 metafile = true
 
 [[files]]
@@ -81,6 +91,11 @@ metafile = true
 [[files]]
 file = "mods/default-options.pw.toml"
 hash = "9b4975496b89994b91ecaec25b246a54703d3a73c9b64e6d1257f499e7368c89"
+metafile = true
+
+[[files]]
+file = "mods/distanthorizons.pw.toml"
+hash = "8cfd619edd7190fdd7f048bc7815193699d0583857f988e421b8e7816167ad25"
 metafile = true
 
 [[files]]
@@ -179,6 +194,11 @@ hash = "a52e4047c277a005f78956f3be63b449ad9660f6c738470cd3b2fec7d4ab30ce"
 metafile = true
 
 [[files]]
+file = "mods/krypton.pw.toml"
+hash = "4d8432eed6984a86acf6c9f056755b3f9082eb8fcb5b3f37e96498e7871e40c9"
+metafile = true
+
+[[files]]
 file = "mods/lambdynamiclights.pw.toml"
 hash = "1bcd8fa2d0c2c3390361736420236c2a5331002ae36bb5cba5a062b8708b5ee9"
 metafile = true
@@ -264,6 +284,11 @@ hash = "15e7405fb9ffa10e8b64234e41ab5031a0ea3c20625aeac25e23334c8f1307c0"
 metafile = true
 
 [[files]]
+file = "mods/nvidium.pw.toml"
+hash = "a56f2d77bd25309bbdc032d95a4dadcc6be31238279a6120172198c5a9bdf2a0"
+metafile = true
+
+[[files]]
 file = "mods/open-parties-and-claims.pw.toml"
 hash = "825b9fd49fb38d13523f9abc9bc9d0e4933f10fe12979c7a3caa15d1121b3cbc"
 metafile = true
@@ -340,7 +365,7 @@ metafile = true
 
 [[files]]
 file = "mods/sodium.pw.toml"
-hash = "54d699d9ba85bb08b9fd3696a11c7449ea1175a118805855143e1c88fa54aa6b"
+hash = "d1818a0dd36e725449fbc8ec9e48b4a276d6c3a6e5761ec9646f53cae3504c62"
 metafile = true
 
 [[files]]
