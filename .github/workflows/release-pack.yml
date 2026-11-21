@@ -70,3 +70,19 @@ jobs:
             --title "Our Little World $(jq -r .version pack-manifest.json)" \
             --notes-file release-notes.md \
             our-little-world.mrpack pack-manifest.json client-defaults.zip
+      - name: Advance the stable Packwiz branch
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          manifest=dist/pack-manifest.json
+          if [[ "$(jq -r .channel "$manifest")" != "release" ]]; then
+            exit 0
+          fi
+          latest="$(gh api "repos/$GITHUB_REPOSITORY/releases/latest" --jq .tag_name)"
+          if [[ "$latest" != "$GITHUB_REF_NAME" ]]; then
+            echo "Skipping $GITHUB_REF_NAME because $latest is the latest stable release."
+            exit 0
+          fi
+          commit="$(jq -r .commit "$manifest")"
+          gh api --method PATCH "repos/$GITHUB_REPOSITORY/git/refs/heads/stable" \
+            -f sha="$commit" -F force=false --jq .object.sha

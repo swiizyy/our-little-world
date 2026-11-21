@@ -8,6 +8,22 @@ Utilisez le même tag sur le serveur et les deux PC.
 
 ## Installer et synchroniser avec un launcher Minecraft Java compatible Fabric
 
+### Pré-lancement direct avec Java
+
+Placez le bootstrap Packwiz dans le dossier de jeu de l'instance Fabric. Dans
+le hook de pré-lancement, utilisez cette commande pour suivre la branche stable
+sans changer l'URL. Sans hook, exécutez-la depuis le dossier de jeu avant de jouer.
+
+```text
+java -jar packwiz-installer-bootstrap.jar https://raw.githubusercontent.com/swiizyy/our-little-world/refs/heads/stable/pack.toml
+```
+
+Utilisez Java 25 et un dossier dédié, vide de mods pour la première installation
+si Packwiz ne le suit pas encore. La branche stable avance après publication.
+Mettez le serveur à jour avant de lancer les deux instances. Pour copier aussi
+les réglages initiaux sans remplacer vos fichiers, utilisez la méthode
+PowerShell ci-dessous.
+
 Pour une installation ponctuelle, téléchargez `our-little-world.mrpack` depuis
 les [releases GitHub](https://github.com/swiizyy/our-little-world/releases).
 Dans Modrinth App, créez une instance en choisissant **Importer depuis un

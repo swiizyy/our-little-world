@@ -10,6 +10,21 @@ and player data before your first migration.
 
 ## Any Minecraft Java launcher with Fabric
 
+### Direct Java launch hook
+
+Put Packwiz Installer Bootstrap in the Fabric instance's game directory. Use
+this pre-launch command to follow stable releases at a fixed URL. Without a
+hook, run it from the game directory before playing.
+
+```text
+java -jar packwiz-installer-bootstrap.jar https://raw.githubusercontent.com/swiizyy/our-little-world/refs/heads/stable/pack.toml
+```
+
+Use Java 25 and a dedicated game directory with no existing mods on the
+first Packwiz install. The stable branch advances after publication. Update
+the server before launching both clients. Use the PowerShell method below
+if you also want to seed the pack's client defaults.
+
 **One-time import.** Download `our-little-world.mrpack` from the desired
 [GitHub release](https://github.com/swiizyy/our-little-world/releases) and
 choose **Create instance → Import from file** in Modrinth App. If the launcher
