@@ -1,0 +1,21 @@
+[client]
+showBackpackIconInInventory = true
+sendBackpackCoordinatesMessage = true
+obtainTips = true
+renderTools = true
+showSupporterBadge = false
+
+[client.toolsOverlay]
+swapOnClose = true
+showTooltip = true
+displayEmptySlots = false
+allowHotbarScrolling = false
+renderBackpackIconInCenter = true
+opacity = 0.75
+offsetX = 0
+offsetY = 0
+
+[client.overlay]
+enableOverlay = true
+offsetX = 20
+offsetY = 30

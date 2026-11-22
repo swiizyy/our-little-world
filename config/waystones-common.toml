@@ -1,0 +1,7 @@
+[inventoryButton]
+# Open the Waystones selection screen directly from the survival inventory.
+inventoryButton = "any"
+
+[rules]
+# Keep the existing co-op travel balance: pets do not teleport by default.
+transportPets = "disabled"

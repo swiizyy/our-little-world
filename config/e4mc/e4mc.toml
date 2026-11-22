@@ -1,0 +1,13 @@
+# Keep an e4mc-hosted world private while still allowing its address to be copied.
+hideDomainInChat = true
+useBroker = true
+brokerUrl = "https://broker.e4mc.link/getBestRelay"
+relayHost = "test.e4mc.link"
+relayPort = 25575
+restoreDedicatedCommands = true
+useWhiteList = true
+hostEnabled = true
+dialtoneHostEnabled = true
+dialtonePlayerEnabled = true
+dialtoneRelayMap = "https://natives.e4mc.link/relaymap.json"
+dialtoneSanitizeTicket = true

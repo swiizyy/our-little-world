@@ -2,5 +2,10 @@
   "overlay": {
     "activeTheme": "jade:dark",
     "alpha": 0.88
+  },
+  "plugin": {
+    "minecraft": {
+      "villager_restock": true
+    }
   }
 }

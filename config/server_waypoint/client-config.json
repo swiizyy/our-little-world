@@ -1,0 +1,15 @@
+{
+  "enableWaypointRender": true,
+  "renderWaypointsUnderF1": false,
+  "waypointScalingFactor": 100,
+  "waypointVerticalOffset": 0,
+  "waypointBackgroundAlpha": 128,
+  "viewDistance": 16,
+  "autoSyncToXaerosMinimap": true,
+  "xaeroDefaultListDirectSync": false,
+  "autoSyncToVoxelMap": true,
+  "waypointManagerSortMode": "DEFAULT",
+  "waypointManagerSortReversed": false,
+  "waypointManagerGroupByLists": true,
+  "waypointManagerShowAllDimensions": false
+}

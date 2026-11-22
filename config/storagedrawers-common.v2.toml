@@ -1,0 +1,7 @@
+[General]
+configVersion = 2
+
+[Tools.QuantifyKey]
+# New drawers show their stored quantity without needing a Quantify Key first.
+enable = true
+showDefault = true

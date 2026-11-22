@@ -1,5 +1,18 @@
 {
   "invMini": true,
   "invAlpha": 45,
-  "invHideBG": true
+  "invHideBG": true,
+  "invAnimated": true,
+  "invWithDebug": false,
+  "keepNotifying": false,
+  "potToggle": true,
+  "potMini": true,
+  "potionLevels": true,
+  "potWithDebug": false,
+  "armToggle": true,
+  "armBars": true,
+  "showCount": true,
+  "armWithDebug": false,
+  "armScale": 75,
+  "armView": "PERCENTAGE"
 }
