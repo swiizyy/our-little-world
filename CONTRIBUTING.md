@@ -150,6 +150,8 @@ delay scheduled runs or disable them after prolonged repository inactivity.
    changelog. The manifest and release notes link to the Packwiz file for
    that exact commit. Preview tags create prereleases. Branch and PR builds
    appear in the validation artifacts. Stable deployment follows stable tags.
+   The stable branch advances without force; a descendant with the same tree
+   is already up to date. A different non-fast-forward requires investigation.
 4. Update the server and both PCs using the
    [operations guide](docs/operations.md) or [guide français](docs/operations.fr.md).
 

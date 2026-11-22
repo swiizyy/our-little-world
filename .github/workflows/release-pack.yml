@@ -84,5 +84,15 @@ jobs:
             exit 0
           fi
           commit="$(jq -r .commit "$manifest")"
+          stable="$(gh api "repos/$GITHUB_REPOSITORY/git/ref/heads/stable" --jq .object.sha)"
+          status="$(gh api "repos/$GITHUB_REPOSITORY/compare/$commit...$stable" --jq .status)"
+          if [[ "$status" == "ahead" ]]; then
+            release_tree="$(gh api "repos/$GITHUB_REPOSITORY/git/commits/$commit" --jq .tree.sha)"
+            stable_tree="$(gh api "repos/$GITHUB_REPOSITORY/git/commits/$stable" --jq .tree.sha)"
+            if [[ -n "$release_tree" && "$release_tree" != "null" && "$release_tree" == "$stable_tree" ]]; then
+              echo "Stable already contains the release tree at $stable."
+              exit 0
+            fi
+          fi
           gh api --method PATCH "repos/$GITHUB_REPOSITORY/git/refs/heads/stable" \
             -f sha="$commit" -F force=false --jq .object.sha
