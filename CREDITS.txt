@@ -1,7 +1,7 @@
 OUR LITTLE WORLD — CREDITS AND LICENSES
 
 This pack is maintained by the Our Little World contributors.
-The 80 mods below are identified by their official project pages.
+The 79 mods below are identified by their official project pages.
 Creators are the Modrinth team members listed for each project when available.
 License identifiers and custom terms are those declared by each project; check
 the project page for the current terms and notices. This list is informational
@@ -36,9 +36,6 @@ C2ME — duplexsystem, ishland
 Cape Provider — litetex
   Project: https://modrinth.com/mod/cape-provider
   License: LGPL-2.1-or-later (https://spdx.org/licenses/LGPL-2.1-or-later.html)
-Chunky — pop4959
-  Project: https://modrinth.com/mod/chunky
-  License: GPL-3.0-only (https://spdx.org/licenses/GPL-3.0-only.html)
 Cloth Config API — shedaniel
   Project: https://modrinth.com/mod/cloth-config
   License: LGPL-3.0-only (https://spdx.org/licenses/LGPL-3.0-only.html)

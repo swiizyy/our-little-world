@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CREDITS.txt"
-hash = "ade59fa533d18e118a13ce5cbb1f2c092f750388fde8bbee84e806b057fce434"
+hash = "1169eddaf2d8a49782b5a55bb98b5ace90d7fb92ccdb72b6034fb80c8f02ad48"
 
 [[files]]
 file = "config/defaultoptions/options.txt"
@@ -41,11 +41,6 @@ metafile = true
 [[files]]
 file = "mods/cape-provider.pw.toml"
 hash = "5c69e1dc7a534ea07abcfff526b5e2c4be3702e79132264934394330e950a7c1"
-metafile = true
-
-[[files]]
-file = "mods/chunky.pw.toml"
-hash = "b6e76b7a0d0355c542e5a6fca02e4ef452f6d9c0610da3b02f8554177e3bec31"
 metafile = true
 
 [[files]]

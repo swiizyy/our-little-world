@@ -1,13 +1,13 @@
 name = "Our Little World"
 author = "Our Little World contributors"
-version = "0.1.3"
+version = "0.1.4"
 description = "A cozy Fabric adventure for building, exploring, farming, and sharing a world together."
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "23dcb4bb2419862e6e4fd65945ef20c8422f2f1ee1284ea772098115584368b9"
+hash = "b2cfa647d9fa2abaaf51e08a9b9313b88b56a9cc9e6bb30e931a549fe255e17d"
 
 [versions]
 fabric = "0.20.1"
