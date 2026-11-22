@@ -36,9 +36,12 @@ class DistributionTests(unittest.TestCase):
         self.assertIn(RESOURCE_PACK_DEFAULTS, [entry["file"] for entry in index["files"]])
         options = dict(line.split(":", 1) for line in
                        (ROOT / RESOURCE_PACK_DEFAULTS).read_text(encoding="utf-8").splitlines())
-        self.assertEqual(set(options), {"version", "resourcePacks"})
+        self.assertEqual(options["version"], "5023")
+        self.assertEqual(options["enableVsync"], "true")
+        self.assertEqual(options["renderDistance"], "16")
+        self.assertEqual(options["simulationDistance"], "8")
         expected = ["vanilla", "fabric"]
-        for pack in ("faithful-64x", "faithful-64x-static-sea-lanterns"):
+        for pack in ("faithful-64x", "faithful-64x-static-sea-lanterns", "better-leaves"):
             expected.append(f"file/{items[f'resourcepacks/{pack}.pw.toml']['filename']}")
         self.assertEqual(json.loads(options["resourcePacks"]), expected)
 

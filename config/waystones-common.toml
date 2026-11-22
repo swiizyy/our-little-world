@@ -3,5 +3,8 @@
 inventoryButton = "any"
 
 [rules]
-# Keep the existing co-op travel balance: pets do not teleport by default.
-transportPets = "disabled"
+# Waystones found or placed by either player are shared with their party.
+defaultVisibility = "team"
+
+# Keep pets together when travelling through Waystones.
+transportPets = "enabled"

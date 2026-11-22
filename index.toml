@@ -6,7 +6,7 @@ hash = "1169eddaf2d8a49782b5a55bb98b5ace90d7fb92ccdb72b6034fb80c8f02ad48"
 
 [[files]]
 file = "config/defaultoptions/options.txt"
-hash = "66aa542c0d7b4585f2caab75624d73b8c92cf13ef3b234eb98d3ad3d8596d0fc"
+hash = "ebfb27f1458d5da0a06b0828aafefaefaa2ec3f9eeed588802d6fd3662cb46bd"
 
 [[files]]
 file = "mods/animaticarefabricated.pw.toml"

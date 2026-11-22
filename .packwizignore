@@ -17,10 +17,17 @@ MODRINTH.md
 README.md
 README.fr.md
 config/DistantHorizons.toml
+config/e4mc/
 config/inventoryhud.json
 config/isxander-main-menu-credits.json
 config/jade/
 config/jei/
 config/lambdynlights.toml
+config/server_waypoint/
+config/skyboxify.json
 config/sodium-options.json
+config/storagedrawers-common.v2.toml
+config/travelersbackpack-client.toml
+config/waystones-common.toml
+config/xaero/
 config/zoomify.json
